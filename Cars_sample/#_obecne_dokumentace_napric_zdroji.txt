@@ -1,0 +1,5 @@
+1. FCD (Floating Car Data) + NDIC od ŘSD => https://registr.dopravniinfo.cz/cs/index.html (studoval bych si obecné paametry a co to dělá),
+2. pro FCD viz výše se data potřebují geolokalizovat podle podkladu, který dle smlouvy s ŘSD nesmíme šířit. Buď nejjednodušší "Lokalizační tabulky" neboli "RDS-TMC" (GIS vrstva) nebo "Street Net" od CEDA Maps, a.s. (ten je drze placený),
+3. samotný NDIC lze lokalizovat 3 způsoby, ten třetí, otevřený, je OpenLR. Ty dva ostatní jsou totožné jako u FCD,
+4. Waze (dříve CCP, nyní Waze for Cities) => https://support.google.com/waze/partners/answer/13458165?hl=en
+5. Pro Waze jsem vyjel zdroje Alerts, Iregularities a Jams.
