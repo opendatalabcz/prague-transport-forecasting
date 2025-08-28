@@ -1,0 +1,7 @@
+FLAG2,DESCRIPTION,
+0,Good/Kvalitní hodnota,
+1,Suspect/Podezřelá hodnota,
+2,Poor/Hodnota s nízkou kvalitou, podezřelá, zatím nepoužívat,
+3,Estimated/Odhadnutá hodnota,
+4,Missing/Chybějící hodnota,
+5,Unknown/Kvalita neznámá,

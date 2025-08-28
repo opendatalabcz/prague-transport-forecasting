@@ -1,0 +1,1973 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_50ab986f67c8416bae351c91f02b0484 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_50ab986f67c8416bae351c91f02b0484" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_50ab986f67c8416bae351c91f02b0484 = L.map(
+                "map_50ab986f67c8416bae351c91f02b0484",
+                {
+                    center: [50.08, 14.42],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 13,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_1f1a5e5f84a490576f12a6b741cb3d4a = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_1f1a5e5f84a490576f12a6b741cb3d4a.addTo(map_50ab986f67c8416bae351c91f02b0484);
+        
+    
+            var marker_d7d3126f920a676c65db1b78def9f0e1 = L.marker(
+                [50.0718897, 14.3986383],
+                {
+}
+            ).addTo(map_50ab986f67c8416bae351c91f02b0484);
+        
+    
+        var popup_755cbed6dbcae790314171c28da6f249 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d14aed5d45b47ac09577791a7144dd9e = $(`<div id="html_d14aed5d45b47ac09577791a7144dd9e" style="width: 100.0%; height: 100.0%;"><b>Anděl (Plzeňská)</b><br>Trasa A14</div>`)[0];
+                popup_755cbed6dbcae790314171c28da6f249.setContent(html_d14aed5d45b47ac09577791a7144dd9e);
+            
+        
+
+        marker_d7d3126f920a676c65db1b78def9f0e1.bindPopup(popup_755cbed6dbcae790314171c28da6f249)
+        ;
+
+        
+    
+    
+            var marker_207457cef9c137f854d84cc528626ea6 = L.marker(
+                [50.0718897, 14.3986383],
+                {
+}
+            ).addTo(map_50ab986f67c8416bae351c91f02b0484);
+        
+    
+        var popup_af94b6f6dd754aa41111dada8be88fb6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d41200fc26ed723a98a65701c3fe7119 = $(`<div id="html_d41200fc26ed723a98a65701c3fe7119" style="width: 100.0%; height: 100.0%;"><b>Anděl (Plzeňská)</b><br>Trasa A14</div>`)[0];
+                popup_af94b6f6dd754aa41111dada8be88fb6.setContent(html_d41200fc26ed723a98a65701c3fe7119);
+            
+        
+
+        marker_207457cef9c137f854d84cc528626ea6.bindPopup(popup_af94b6f6dd754aa41111dada8be88fb6)
+        ;
+
+        
+    
+    
+            var marker_8dae324f9fbe5ef3715f9b6f14194df1 = L.marker(
+                [50.0793736, 14.3785794],
+                {
+}
+            ).addTo(map_50ab986f67c8416bae351c91f02b0484);
+        
+    
+        var popup_180ecaf2c3c029570650a2c28dcf5ea2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f61359be512dba6472c1518d7c51d0a7 = $(`<div id="html_f61359be512dba6472c1518d7c51d0a7" style="width: 100.0%; height: 100.0%;"><b>Atletická</b><br>Trasa A140</div>`)[0];
+                popup_180ecaf2c3c029570650a2c28dcf5ea2.setContent(html_f61359be512dba6472c1518d7c51d0a7);
+            
+        
+
+        marker_8dae324f9fbe5ef3715f9b6f14194df1.bindPopup(popup_180ecaf2c3c029570650a2c28dcf5ea2)
+        ;
+
+        
+    
+    
+            var marker_506a07b9924109382be26cbfcb0f0b85 = L.marker(
+                [50.0793736, 14.3785794],
+                {
+}
+            ).addTo(map_50ab986f67c8416bae351c91f02b0484);
+        
+    
+        var popup_253190c225a9fb4610aa01c61cedfb82 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7c22e1b20bfdf73f3bd5718bdec9cce1 = $(`<div id="html_7c22e1b20bfdf73f3bd5718bdec9cce1" style="width: 100.0%; height: 100.0%;"><b>Atletická</b><br>Trasa A140</div>`)[0];
+                popup_253190c225a9fb4610aa01c61cedfb82.setContent(html_7c22e1b20bfdf73f3bd5718bdec9cce1);
+            
+        
+
+        marker_506a07b9924109382be26cbfcb0f0b85.bindPopup(popup_253190c225a9fb4610aa01c61cedfb82)
+        ;
+
+        
+    
+    
+            var marker_d8b757cf9c4048835990b69769f94809 = L.marker(
+                [50.0420991, 14.407247],
+                {
+}
+            ).addTo(map_50ab986f67c8416bae351c91f02b0484);
+        
+    
+        var popup_92364f634df6df20813f4aac0b9f8dd8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fdfcafaee7fc14a1bcc912c8954f7778 = $(`<div id="html_fdfcafaee7fc14a1bcc912c8954f7778" style="width: 100.0%; height: 100.0%;"><b>Barrandovský most</b><br>Trasa A 12</div>`)[0];
+                popup_92364f634df6df20813f4aac0b9f8dd8.setContent(html_fdfcafaee7fc14a1bcc912c8954f7778);
+            
+        
+
+        marker_d8b757cf9c4048835990b69769f94809.bindPopup(popup_92364f634df6df20813f4aac0b9f8dd8)
+        ;
+
+        
+    
+    
+            var marker_623b72d88977b34a0ac57148553f0dbf = L.marker(
+                [50.0420991, 14.407247],
+                {
+}
+            ).addTo(map_50ab986f67c8416bae351c91f02b0484);
+        
+    
+        var popup_766b49460bee7a89e608a07e8aa8a4dd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0136f6dd69e182cc87e3fc14ff996dfe = $(`<div id="html_0136f6dd69e182cc87e3fc14ff996dfe" style="width: 100.0%; height: 100.0%;"><b>Barrandovský most</b><br>Trasa A 12</div>`)[0];
+                popup_766b49460bee7a89e608a07e8aa8a4dd.setContent(html_0136f6dd69e182cc87e3fc14ff996dfe);
+            
+        
+
+        marker_623b72d88977b34a0ac57148553f0dbf.bindPopup(popup_766b49460bee7a89e608a07e8aa8a4dd)
+        ;
+
+        
+    
+    
+            var marker_7bf79c4deea7281e3412025e2daed096 = L.marker(
+                [50.031113, 14.492876],
+                {
+}
+            ).addTo(map_50ab986f67c8416bae351c91f02b0484);
+        
+    
+        var popup_9ccfe737ca9a6cf146c203846b9446d8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3675e5ca61075a31eca3e294e072c806 = $(`<div id="html_3675e5ca61075a31eca3e294e072c806" style="width: 100.0%; height: 100.0%;"><b>Chodov</b><br>Trasa A 22</div>`)[0];
+                popup_9ccfe737ca9a6cf146c203846b9446d8.setContent(html_3675e5ca61075a31eca3e294e072c806);
+            
+        
+
+        marker_7bf79c4deea7281e3412025e2daed096.bindPopup(popup_9ccfe737ca9a6cf146c203846b9446d8)
+        ;
+
+        
+    
+    
+            var marker_fa33718567f7a7cf67593356c88b0411 = L.marker(
+                [50.031113, 14.492876],
+                {
+}
+            ).addTo(map_50ab986f67c8416bae351c91f02b0484);
+        
+    
+        var popup_a7b93a06af0f021936b984c8618254b6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4203b5c0a42bfa7635a297803307845d = $(`<div id="html_4203b5c0a42bfa7635a297803307845d" style="width: 100.0%; height: 100.0%;"><b>Chodov</b><br>Trasa A 22</div>`)[0];
+                popup_a7b93a06af0f021936b984c8618254b6.setContent(html_4203b5c0a42bfa7635a297803307845d);
+            
+        
+
+        marker_fa33718567f7a7cf67593356c88b0411.bindPopup(popup_a7b93a06af0f021936b984c8618254b6)
+        ;
+
+        
+    
+    
+            var marker_9a27fd2d43cbf477cea565830e8cdbcc = L.marker(
+                [50.1135103, 14.4581003],
+                {
+}
+            ).addTo(map_50ab986f67c8416bae351c91f02b0484);
+        
+    
+        var popup_186c3fd912ac27a03c91100e627f5c6e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2ab535306656fb3996ef8706c28fbefb = $(`<div id="html_2ab535306656fb3996ef8706c28fbefb" style="width: 100.0%; height: 100.0%;"><b>U Českých loděnic</b><br>Trasa A2</div>`)[0];
+                popup_186c3fd912ac27a03c91100e627f5c6e.setContent(html_2ab535306656fb3996ef8706c28fbefb);
+            
+        
+
+        marker_9a27fd2d43cbf477cea565830e8cdbcc.bindPopup(popup_186c3fd912ac27a03c91100e627f5c6e)
+        ;
+
+        
+    
+    
+            var marker_4ec231f963c449444871bb8bd251cb69 = L.marker(
+                [50.1135103, 14.4581003],
+                {
+}
+            ).addTo(map_50ab986f67c8416bae351c91f02b0484);
+        
+    
+        var popup_26d2d4ebce5cd461b5aba54c3c3e9c0e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_da5564178ce0b60e4e7299128ec16f7d = $(`<div id="html_da5564178ce0b60e4e7299128ec16f7d" style="width: 100.0%; height: 100.0%;"><b>U Českých loděnic</b><br>Trasa A2</div>`)[0];
+                popup_26d2d4ebce5cd461b5aba54c3c3e9c0e.setContent(html_da5564178ce0b60e4e7299128ec16f7d);
+            
+        
+
+        marker_4ec231f963c449444871bb8bd251cb69.bindPopup(popup_26d2d4ebce5cd461b5aba54c3c3e9c0e)
+        ;
+
+        
+    
+    
+            var marker_4fd541ad52c91c0eda9d14de398d0e23 = L.marker(
+                [50.087262, 14.425974],
+                {
+}
+            ).addTo(map_50ab986f67c8416bae351c91f02b0484);
+        
+    
+        var popup_bf6d5b7bd7dba33bb2174903c52a5004 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0d88b41bbbba8812dbc63f4f5dac8e4a = $(`<div id="html_0d88b41bbbba8812dbc63f4f5dac8e4a" style="width: 100.0%; height: 100.0%;"><b>Celetná</b><br>Trasa A 1</div>`)[0];
+                popup_bf6d5b7bd7dba33bb2174903c52a5004.setContent(html_0d88b41bbbba8812dbc63f4f5dac8e4a);
+            
+        
+
+        marker_4fd541ad52c91c0eda9d14de398d0e23.bindPopup(popup_bf6d5b7bd7dba33bb2174903c52a5004)
+        ;
+
+        
+    
+    
+            var marker_c64b44eb2e293f4ce5ed0d31d245a397 = L.marker(
+                [50.087262, 14.425974],
+                {
+}
+            ).addTo(map_50ab986f67c8416bae351c91f02b0484);
+        
+    
+        var popup_ba01e255376015c1077963b372841439 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_62b400c7e6caebafc0c0125782553445 = $(`<div id="html_62b400c7e6caebafc0c0125782553445" style="width: 100.0%; height: 100.0%;"><b>Celetná</b><br>Trasa A 1</div>`)[0];
+                popup_ba01e255376015c1077963b372841439.setContent(html_62b400c7e6caebafc0c0125782553445);
+            
+        
+
+        marker_c64b44eb2e293f4ce5ed0d31d245a397.bindPopup(popup_ba01e255376015c1077963b372841439)
+        ;
+
+        
+    
+    
+            var marker_0cc5cfe141e87fe2edd789b3166ef8d7 = L.marker(
+                [50.093562, 14.320898],
+                {
+}
+            ).addTo(map_50ab986f67c8416bae351c91f02b0484);
+        
+    
+        var popup_7b9fc9e2c8ae11c3d448479a874e9bf9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1c75c5c72283e72e3125734f508facff = $(`<div id="html_1c75c5c72283e72e3125734f508facff" style="width: 100.0%; height: 100.0%;"><b>Divoká Šárka</b><br>Trasa A 33</div>`)[0];
+                popup_7b9fc9e2c8ae11c3d448479a874e9bf9.setContent(html_1c75c5c72283e72e3125734f508facff);
+            
+        
+
+        marker_0cc5cfe141e87fe2edd789b3166ef8d7.bindPopup(popup_7b9fc9e2c8ae11c3d448479a874e9bf9)
+        ;
+
+        
+    
+    
+            var marker_ab2db96503d027714b5124a070ce0467 = L.marker(
+                [50.093562, 14.320898],
+                {
+}
+            ).addTo(map_50ab986f67c8416bae351c91f02b0484);
+        
+    
+        var popup_86e692ce057b5a0ec98948a4c40fc35a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9bfa1e6a512fa8f30737558f2468b1b7 = $(`<div id="html_9bfa1e6a512fa8f30737558f2468b1b7" style="width: 100.0%; height: 100.0%;"><b>Divoká Šárka</b><br>Trasa A 33</div>`)[0];
+                popup_86e692ce057b5a0ec98948a4c40fc35a.setContent(html_9bfa1e6a512fa8f30737558f2468b1b7);
+            
+        
+
+        marker_ab2db96503d027714b5124a070ce0467.bindPopup(popup_86e692ce057b5a0ec98948a4c40fc35a)
+        ;
+
+        
+    
+    
+            var marker_6de7dc7c67ee597c01c9d1b79982f02a = L.marker(
+                [50.0973149, 14.432982],
+                {
+}
+            ).addTo(map_50ab986f67c8416bae351c91f02b0484);
+        
+    
+        var popup_5865fa263164d7bd1e7863ea601e1fe8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_943bcf464d7a2f577b5c8cb73f2e558f = $(`<div id="html_943bcf464d7a2f577b5c8cb73f2e558f" style="width: 100.0%; height: 100.0%;"><b>Dukelských hrdinů</b><br>Trasa A 310</div>`)[0];
+                popup_5865fa263164d7bd1e7863ea601e1fe8.setContent(html_943bcf464d7a2f577b5c8cb73f2e558f);
+            
+        
+
+        marker_6de7dc7c67ee597c01c9d1b79982f02a.bindPopup(popup_5865fa263164d7bd1e7863ea601e1fe8)
+        ;
+
+        
+    
+    
+            var marker_b2eabfe1e295f0eda813dda9ce753652 = L.marker(
+                [50.0973149, 14.432982],
+                {
+}
+            ).addTo(map_50ab986f67c8416bae351c91f02b0484);
+        
+    
+        var popup_872b5ee7d06c143af6c5945a9512a494 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bd2e74482573112c843a4aaf76eebd0b = $(`<div id="html_bd2e74482573112c843a4aaf76eebd0b" style="width: 100.0%; height: 100.0%;"><b>Dukelských hrdinů</b><br>Trasa A 310</div>`)[0];
+                popup_872b5ee7d06c143af6c5945a9512a494.setContent(html_bd2e74482573112c843a4aaf76eebd0b);
+            
+        
+
+        marker_b2eabfe1e295f0eda813dda9ce753652.bindPopup(popup_872b5ee7d06c143af6c5945a9512a494)
+        ;
+
+        
+    
+    
+            var marker_41a7928792f78bba74526fd81a1eedf2 = L.marker(
+                [50.059714879868, 14.594435691833],
+                {
+}
+            ).addTo(map_50ab986f67c8416bae351c91f02b0484);
+        
+    
+        var popup_9b23ce72f568a4a4d5cd34bf76682402 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bf64bf50b07c7d2ed96e14daccbe9140 = $(`<div id="html_bf64bf50b07c7d2ed96e14daccbe9140" style="width: 100.0%; height: 100.0%;"><b>Dubeč</b><br>Trasa A 24</div>`)[0];
+                popup_9b23ce72f568a4a4d5cd34bf76682402.setContent(html_bf64bf50b07c7d2ed96e14daccbe9140);
+            
+        
+
+        marker_41a7928792f78bba74526fd81a1eedf2.bindPopup(popup_9b23ce72f568a4a4d5cd34bf76682402)
+        ;
+
+        
+    
+    
+            var marker_ef5ed1e40e2435b0066501ab1db41e8f = L.marker(
+                [50.059714879868, 14.594435691833],
+                {
+}
+            ).addTo(map_50ab986f67c8416bae351c91f02b0484);
+        
+    
+        var popup_575fd3e041794ac8937c4c8a8b62b1ad = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_56aac192420856e9fe0b7979c8246f9b = $(`<div id="html_56aac192420856e9fe0b7979c8246f9b" style="width: 100.0%; height: 100.0%;"><b>Dubeč</b><br>Trasa A 24</div>`)[0];
+                popup_575fd3e041794ac8937c4c8a8b62b1ad.setContent(html_56aac192420856e9fe0b7979c8246f9b);
+            
+        
+
+        marker_ef5ed1e40e2435b0066501ab1db41e8f.bindPopup(popup_575fd3e041794ac8937c4c8a8b62b1ad)
+        ;
+
+        
+    
+    
+            var marker_db0293ced93ca38a5d34f44ed7bb3658 = L.marker(
+                [50.106999, 14.470749],
+                {
+}
+            ).addTo(map_50ab986f67c8416bae351c91f02b0484);
+        
+    
+        var popup_1d96cad9de67867c3a49171a1f43e0ae = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5e501e6c8b39a91c4ef0fbb778e68cde = $(`<div id="html_5e501e6c8b39a91c4ef0fbb778e68cde" style="width: 100.0%; height: 100.0%;"><b>Elsnicovo náměstí x U Českých loděnic</b><br>Trasa A 2</div>`)[0];
+                popup_1d96cad9de67867c3a49171a1f43e0ae.setContent(html_5e501e6c8b39a91c4ef0fbb778e68cde);
+            
+        
+
+        marker_db0293ced93ca38a5d34f44ed7bb3658.bindPopup(popup_1d96cad9de67867c3a49171a1f43e0ae)
+        ;
+
+        
+    
+    
+            var marker_bc7fe87d92e44f8329f53d76b6c7fb49 = L.marker(
+                [50.106999, 14.470749],
+                {
+}
+            ).addTo(map_50ab986f67c8416bae351c91f02b0484);
+        
+    
+        var popup_f94a704af3c487ea4fd8f488c81f17a3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5e5b0da04d440359be0edfa54ab794d1 = $(`<div id="html_5e5b0da04d440359be0edfa54ab794d1" style="width: 100.0%; height: 100.0%;"><b>Elsnicovo náměstí x U Českých loděnic</b><br>Trasa A 2</div>`)[0];
+                popup_f94a704af3c487ea4fd8f488c81f17a3.setContent(html_5e5b0da04d440359be0edfa54ab794d1);
+            
+        
+
+        marker_bc7fe87d92e44f8329f53d76b6c7fb49.bindPopup(popup_f94a704af3c487ea4fd8f488c81f17a3)
+        ;
+
+        
+    
+    
+            var marker_cebe285bfff59f59ae240eacaaeb132b = L.marker(
+                [50.0872642, 14.4344272],
+                {
+}
+            ).addTo(map_50ab986f67c8416bae351c91f02b0484);
+        
+    
+        var popup_15309ebc1df4c2a3dee4d108b4d66f1c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_947f2a0573a1253e5ca89c94f1d2c279 = $(`<div id="html_947f2a0573a1253e5ca89c94f1d2c279" style="width: 100.0%; height: 100.0%;"><b>Hybernská</b><br>Trasa A25</div>`)[0];
+                popup_15309ebc1df4c2a3dee4d108b4d66f1c.setContent(html_947f2a0573a1253e5ca89c94f1d2c279);
+            
+        
+
+        marker_cebe285bfff59f59ae240eacaaeb132b.bindPopup(popup_15309ebc1df4c2a3dee4d108b4d66f1c)
+        ;
+
+        
+    
+    
+            var marker_7607afab960571e8a314a7abd4cc3016 = L.marker(
+                [50.0872642, 14.4344272],
+                {
+}
+            ).addTo(map_50ab986f67c8416bae351c91f02b0484);
+        
+    
+        var popup_b746d75969d650386b30594eaac77657 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1a4b1115391bc58f6463f0216fc610d1 = $(`<div id="html_1a4b1115391bc58f6463f0216fc610d1" style="width: 100.0%; height: 100.0%;"><b>Hybernská</b><br>Trasa A25</div>`)[0];
+                popup_b746d75969d650386b30594eaac77657.setContent(html_1a4b1115391bc58f6463f0216fc610d1);
+            
+        
+
+        marker_7607afab960571e8a314a7abd4cc3016.bindPopup(popup_b746d75969d650386b30594eaac77657)
+        ;
+
+        
+    
+    
+            var marker_a8adf3b7880c0aac642a1fe32e24b19e = L.marker(
+                [50.040233, 14.403657],
+                {
+}
+            ).addTo(map_50ab986f67c8416bae351c91f02b0484);
+        
+    
+        var popup_28244284b4af81f47dc99afe431b69cd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f40b6f66b5325ad477f666ada2258419 = $(`<div id="html_f40b6f66b5325ad477f666ada2258419" style="width: 100.0%; height: 100.0%;"><b>Hlubočepská</b><br>Trasa A 12</div>`)[0];
+                popup_28244284b4af81f47dc99afe431b69cd.setContent(html_f40b6f66b5325ad477f666ada2258419);
+            
+        
+
+        marker_a8adf3b7880c0aac642a1fe32e24b19e.bindPopup(popup_28244284b4af81f47dc99afe431b69cd)
+        ;
+
+        
+    
+    
+            var marker_5e96b0588486200b8f515ebacad84690 = L.marker(
+                [50.040233, 14.403657],
+                {
+}
+            ).addTo(map_50ab986f67c8416bae351c91f02b0484);
+        
+    
+        var popup_117b37d743328496dead364b809ff5b1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6c65445ee12848d07a0b6056bbe99dc0 = $(`<div id="html_6c65445ee12848d07a0b6056bbe99dc0" style="width: 100.0%; height: 100.0%;"><b>Hlubočepská</b><br>Trasa A 12</div>`)[0];
+                popup_117b37d743328496dead364b809ff5b1.setContent(html_6c65445ee12848d07a0b6056bbe99dc0);
+            
+        
+
+        marker_5e96b0588486200b8f515ebacad84690.bindPopup(popup_117b37d743328496dead364b809ff5b1)
+        ;
+
+        
+    
+    
+            var marker_4bb558624d988ee909242d8f834f42ba = L.marker(
+                [50.046196, 14.417109],
+                {
+}
+            ).addTo(map_50ab986f67c8416bae351c91f02b0484);
+        
+    
+        var popup_c1cc130d270b18a8e44dc65085dd1aa3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_14395870098e359a5fc6df6414f8372f = $(`<div id="html_14395870098e359a5fc6df6414f8372f" style="width: 100.0%; height: 100.0%;"><b>Jeremenkova</b><br>Trasa A 221</div>`)[0];
+                popup_c1cc130d270b18a8e44dc65085dd1aa3.setContent(html_14395870098e359a5fc6df6414f8372f);
+            
+        
+
+        marker_4bb558624d988ee909242d8f834f42ba.bindPopup(popup_c1cc130d270b18a8e44dc65085dd1aa3)
+        ;
+
+        
+    
+    
+            var marker_150ead9e5f025487f0783c507278692f = L.marker(
+                [50.046196, 14.417109],
+                {
+}
+            ).addTo(map_50ab986f67c8416bae351c91f02b0484);
+        
+    
+        var popup_13f99fa2bddbdf6898d9a61bb7fd6790 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0edc48abdba6372f8b844f1e8834fe09 = $(`<div id="html_0edc48abdba6372f8b844f1e8834fe09" style="width: 100.0%; height: 100.0%;"><b>Jeremenkova</b><br>Trasa A 221</div>`)[0];
+                popup_13f99fa2bddbdf6898d9a61bb7fd6790.setContent(html_0edc48abdba6372f8b844f1e8834fe09);
+            
+        
+
+        marker_150ead9e5f025487f0783c507278692f.bindPopup(popup_13f99fa2bddbdf6898d9a61bb7fd6790)
+        ;
+
+        
+    
+    
+            var marker_6043f0e7224862079ff58a89cc2da081 = L.marker(
+                [50.08312, 14.4077472],
+                {
+}
+            ).addTo(map_50ab986f67c8416bae351c91f02b0484);
+        
+    
+        var popup_a7aa5d8ce57cf51daa66742f87112eed = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5d676da2cdab95c04c85e6261e19cd03 = $(`<div id="html_5d676da2cdab95c04c85e6261e19cd03" style="width: 100.0%; height: 100.0%;"><b>Kampa</b><br>Trasa A1</div>`)[0];
+                popup_a7aa5d8ce57cf51daa66742f87112eed.setContent(html_5d676da2cdab95c04c85e6261e19cd03);
+            
+        
+
+        marker_6043f0e7224862079ff58a89cc2da081.bindPopup(popup_a7aa5d8ce57cf51daa66742f87112eed)
+        ;
+
+        
+    
+    
+            var marker_4d8bc397768ad5b41554b7ce20bea10e = L.marker(
+                [50.08312, 14.4077472],
+                {
+}
+            ).addTo(map_50ab986f67c8416bae351c91f02b0484);
+        
+    
+        var popup_4d41c1e980bf2403a34e35dcbcadf800 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_95116d0e8cb4b03f12e5680aa259a0ba = $(`<div id="html_95116d0e8cb4b03f12e5680aa259a0ba" style="width: 100.0%; height: 100.0%;"><b>Kampa</b><br>Trasa A1</div>`)[0];
+                popup_4d41c1e980bf2403a34e35dcbcadf800.setContent(html_95116d0e8cb4b03f12e5680aa259a0ba);
+            
+        
+
+        marker_4d8bc397768ad5b41554b7ce20bea10e.bindPopup(popup_4d41c1e980bf2403a34e35dcbcadf800)
+        ;
+
+        
+    
+    
+            var marker_b4cb8f796b333dc457a7eb13df2e8ec9 = L.marker(
+                [50.096722485653, 14.433524608612],
+                {
+}
+            ).addTo(map_50ab986f67c8416bae351c91f02b0484);
+        
+    
+        var popup_d7a3840abaf1a786853569017762ae53 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_77a8975f9b616ed0670550c11bda0ec2 = $(`<div id="html_77a8975f9b616ed0670550c11bda0ec2" style="width: 100.0%; height: 100.0%;"><b>Nábřeží Kapitána Jaroše</b><br>Trasa A 1</div>`)[0];
+                popup_d7a3840abaf1a786853569017762ae53.setContent(html_77a8975f9b616ed0670550c11bda0ec2);
+            
+        
+
+        marker_b4cb8f796b333dc457a7eb13df2e8ec9.bindPopup(popup_d7a3840abaf1a786853569017762ae53)
+        ;
+
+        
+    
+    
+            var marker_bee6d302cebda78a538b359dc426fb00 = L.marker(
+                [50.096722485653, 14.433524608612],
+                {
+}
+            ).addTo(map_50ab986f67c8416bae351c91f02b0484);
+        
+    
+        var popup_54dcb54315483cd981955046e75b876d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5df649238aaaaca2e66ba970658285a0 = $(`<div id="html_5df649238aaaaca2e66ba970658285a0" style="width: 100.0%; height: 100.0%;"><b>Nábřeží Kapitána Jaroše</b><br>Trasa A 1</div>`)[0];
+                popup_54dcb54315483cd981955046e75b876d.setContent(html_5df649238aaaaca2e66ba970658285a0);
+            
+        
+
+        marker_bee6d302cebda78a538b359dc426fb00.bindPopup(popup_54dcb54315483cd981955046e75b876d)
+        ;
+
+        
+    
+    
+            var marker_3bd9893892a820590c67e0fbb32071f1 = L.marker(
+                [50.1269227, 14.507327],
+                {
+}
+            ).addTo(map_50ab986f67c8416bae351c91f02b0484);
+        
+    
+        var popup_4b80c1b52b00261c0ae0a2417058233b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_103e249ac1bdbfe503ae148f74e51c9e = $(`<div id="html_103e249ac1bdbfe503ae148f74e51c9e" style="width: 100.0%; height: 100.0%;"><b>Letňany</b><br>Trasa A 27</div>`)[0];
+                popup_4b80c1b52b00261c0ae0a2417058233b.setContent(html_103e249ac1bdbfe503ae148f74e51c9e);
+            
+        
+
+        marker_3bd9893892a820590c67e0fbb32071f1.bindPopup(popup_4b80c1b52b00261c0ae0a2417058233b)
+        ;
+
+        
+    
+    
+            var marker_badf118d48a1ec3a6988fd49fe1c1e31 = L.marker(
+                [50.1269227, 14.507327],
+                {
+}
+            ).addTo(map_50ab986f67c8416bae351c91f02b0484);
+        
+    
+        var popup_580c669d3a1125c35746705011d8d7c2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_25a47c93ecbfb46b326287d4b90b905e = $(`<div id="html_25a47c93ecbfb46b326287d4b90b905e" style="width: 100.0%; height: 100.0%;"><b>Letňany</b><br>Trasa A 27</div>`)[0];
+                popup_580c669d3a1125c35746705011d8d7c2.setContent(html_25a47c93ecbfb46b326287d4b90b905e);
+            
+        
+
+        marker_badf118d48a1ec3a6988fd49fe1c1e31.bindPopup(popup_580c669d3a1125c35746705011d8d7c2)
+        ;
+
+        
+    
+    
+            var marker_1a0daa45b27e794aa37e212fd6c39aef = L.marker(
+                [50.109662, 14.494891],
+                {
+}
+            ).addTo(map_50ab986f67c8416bae351c91f02b0484);
+        
+    
+        var popup_53e7f9860a302f86782a9daeac014cf2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_da7895483c1897e6485f59282867e4aa = $(`<div id="html_da7895483c1897e6485f59282867e4aa" style="width: 100.0%; height: 100.0%;"><b>Kolčavka</b><br>Trasa A 26</div>`)[0];
+                popup_53e7f9860a302f86782a9daeac014cf2.setContent(html_da7895483c1897e6485f59282867e4aa);
+            
+        
+
+        marker_1a0daa45b27e794aa37e212fd6c39aef.bindPopup(popup_53e7f9860a302f86782a9daeac014cf2)
+        ;
+
+        
+    
+    
+            var marker_ada7d18c3299ee920256001a3c8d4a2b = L.marker(
+                [50.109662, 14.494891],
+                {
+}
+            ).addTo(map_50ab986f67c8416bae351c91f02b0484);
+        
+    
+        var popup_9847f04c35c6e1e83afb2c680218484b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_578ed4ee524d790ca842c3148cfff88a = $(`<div id="html_578ed4ee524d790ca842c3148cfff88a" style="width: 100.0%; height: 100.0%;"><b>Kolčavka</b><br>Trasa A 26</div>`)[0];
+                popup_9847f04c35c6e1e83afb2c680218484b.setContent(html_578ed4ee524d790ca842c3148cfff88a);
+            
+        
+
+        marker_ada7d18c3299ee920256001a3c8d4a2b.bindPopup(popup_9847f04c35c6e1e83afb2c680218484b)
+        ;
+
+        
+    
+    
+            var marker_ee493f731d386f5de062d5d4aabccffd = L.marker(
+                [49.9803678, 14.3634271],
+                {
+}
+            ).addTo(map_50ab986f67c8416bae351c91f02b0484);
+        
+    
+        var popup_bcf664c534f376a243b7dae802460ec9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_debe2d08f7b78cdafce6ec7661ec9f93 = $(`<div id="html_debe2d08f7b78cdafce6ec7661ec9f93" style="width: 100.0%; height: 100.0%;"><b>Radotín</b><br>Trasa A 11</div>`)[0];
+                popup_bcf664c534f376a243b7dae802460ec9.setContent(html_debe2d08f7b78cdafce6ec7661ec9f93);
+            
+        
+
+        marker_ee493f731d386f5de062d5d4aabccffd.bindPopup(popup_bcf664c534f376a243b7dae802460ec9)
+        ;
+
+        
+    
+    
+            var marker_4156f8c51b867552f420778ec27edd14 = L.marker(
+                [49.9803678, 14.3634271],
+                {
+}
+            ).addTo(map_50ab986f67c8416bae351c91f02b0484);
+        
+    
+        var popup_a01b16f1c03e56dcfb6de9d3bb0598cb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f4af92dfa496225cc15dfe782bb3410d = $(`<div id="html_f4af92dfa496225cc15dfe782bb3410d" style="width: 100.0%; height: 100.0%;"><b>Radotín</b><br>Trasa A 11</div>`)[0];
+                popup_a01b16f1c03e56dcfb6de9d3bb0598cb.setContent(html_f4af92dfa496225cc15dfe782bb3410d);
+            
+        
+
+        marker_4156f8c51b867552f420778ec27edd14.bindPopup(popup_a01b16f1c03e56dcfb6de9d3bb0598cb)
+        ;
+
+        
+    
+    
+            var marker_08a4aaa6ace0a7ef85a3d5d9273c9959 = L.marker(
+                [50.1256708, 14.5346419],
+                {
+}
+            ).addTo(map_50ab986f67c8416bae351c91f02b0484);
+        
+    
+        var popup_94ac02d4b7e3fe74912d7ad900c9cac5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9370dd2265640155f9acce45846b50ba = $(`<div id="html_9370dd2265640155f9acce45846b50ba" style="width: 100.0%; height: 100.0%;"><b>Mladoboleslavská</b><br>Trasa A267</div>`)[0];
+                popup_94ac02d4b7e3fe74912d7ad900c9cac5.setContent(html_9370dd2265640155f9acce45846b50ba);
+            
+        
+
+        marker_08a4aaa6ace0a7ef85a3d5d9273c9959.bindPopup(popup_94ac02d4b7e3fe74912d7ad900c9cac5)
+        ;
+
+        
+    
+    
+            var marker_e5f2fd02caf122fda436859eb8b75fe8 = L.marker(
+                [50.1256708, 14.5346419],
+                {
+}
+            ).addTo(map_50ab986f67c8416bae351c91f02b0484);
+        
+    
+        var popup_af0c92228c778851da387b13a90c8164 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8593fb87b33f7556d67f68a445e38eb0 = $(`<div id="html_8593fb87b33f7556d67f68a445e38eb0" style="width: 100.0%; height: 100.0%;"><b>Mladoboleslavská</b><br>Trasa A267</div>`)[0];
+                popup_af0c92228c778851da387b13a90c8164.setContent(html_8593fb87b33f7556d67f68a445e38eb0);
+            
+        
+
+        marker_e5f2fd02caf122fda436859eb8b75fe8.bindPopup(popup_af0c92228c778851da387b13a90c8164)
+        ;
+
+        
+    
+    
+            var marker_fe9bfba7f33cc7c9a108fb27459154f9 = L.marker(
+                [50.0682472, 14.430294],
+                {
+}
+            ).addTo(map_50ab986f67c8416bae351c91f02b0484);
+        
+    
+        var popup_49e5005476bc36f3cc7dcb901250e88e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_df2f3003a492bc73261c16f848eed9d1 = $(`<div id="html_df2f3003a492bc73261c16f848eed9d1" style="width: 100.0%; height: 100.0%;"><b>Nuselský most</b><br>Trasa A 41</div>`)[0];
+                popup_49e5005476bc36f3cc7dcb901250e88e.setContent(html_df2f3003a492bc73261c16f848eed9d1);
+            
+        
+
+        marker_fe9bfba7f33cc7c9a108fb27459154f9.bindPopup(popup_49e5005476bc36f3cc7dcb901250e88e)
+        ;
+
+        
+    
+    
+            var marker_a61afcae8a8932a27b239a3414160cee = L.marker(
+                [50.0682472, 14.430294],
+                {
+}
+            ).addTo(map_50ab986f67c8416bae351c91f02b0484);
+        
+    
+        var popup_58ea67c8cad0fa4599b1927ea6d27a88 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_70b746e7681d84f86d6f89ac7d747757 = $(`<div id="html_70b746e7681d84f86d6f89ac7d747757" style="width: 100.0%; height: 100.0%;"><b>Nuselský most</b><br>Trasa A 41</div>`)[0];
+                popup_58ea67c8cad0fa4599b1927ea6d27a88.setContent(html_70b746e7681d84f86d6f89ac7d747757);
+            
+        
+
+        marker_a61afcae8a8932a27b239a3414160cee.bindPopup(popup_58ea67c8cad0fa4599b1927ea6d27a88)
+        ;
+
+        
+    
+    
+            var marker_a3a1724e0519c34bf8122b7abdc35dcf = L.marker(
+                [50.0928879, 14.371382],
+                {
+}
+            ).addTo(map_50ab986f67c8416bae351c91f02b0484);
+        
+    
+        var popup_f2e61ec6148902cb3bbb1672a414da0c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b05e20d1a8c630eed0cbf20b5d0b6cb2 = $(`<div id="html_b05e20d1a8c630eed0cbf20b5d0b6cb2" style="width: 100.0%; height: 100.0%;"><b>Střešovice</b><br>Trasa A 165X</div>`)[0];
+                popup_f2e61ec6148902cb3bbb1672a414da0c.setContent(html_b05e20d1a8c630eed0cbf20b5d0b6cb2);
+            
+        
+
+        marker_a3a1724e0519c34bf8122b7abdc35dcf.bindPopup(popup_f2e61ec6148902cb3bbb1672a414da0c)
+        ;
+
+        
+    
+    
+            var marker_9871a9d8c5d5dd0c1a1f0ef0cafe272d = L.marker(
+                [50.0928879, 14.371382],
+                {
+}
+            ).addTo(map_50ab986f67c8416bae351c91f02b0484);
+        
+    
+        var popup_3db43bce1a396a54c10eac9e7b52b8f6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7d0a3f625d7b9de5079032533a01d9fa = $(`<div id="html_7d0a3f625d7b9de5079032533a01d9fa" style="width: 100.0%; height: 100.0%;"><b>Střešovice</b><br>Trasa A 165X</div>`)[0];
+                popup_3db43bce1a396a54c10eac9e7b52b8f6.setContent(html_7d0a3f625d7b9de5079032533a01d9fa);
+            
+        
+
+        marker_9871a9d8c5d5dd0c1a1f0ef0cafe272d.bindPopup(popup_3db43bce1a396a54c10eac9e7b52b8f6)
+        ;
+
+        
+    
+    
+            var marker_3bf3334cff27fb8a3e939ad4c804f421 = L.marker(
+                [50.098333, 14.407471],
+                {
+}
+            ).addTo(map_50ab986f67c8416bae351c91f02b0484);
+        
+    
+        var popup_626890d8049cce8ab698464115db8d72 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_24d297bdc4768398d3d3a3c44d78f55c = $(`<div id="html_24d297bdc4768398d3d3a3c44d78f55c" style="width: 100.0%; height: 100.0%;"><b>Pelléova</b><br>Trasa A 160</div>`)[0];
+                popup_626890d8049cce8ab698464115db8d72.setContent(html_24d297bdc4768398d3d3a3c44d78f55c);
+            
+        
+
+        marker_3bf3334cff27fb8a3e939ad4c804f421.bindPopup(popup_626890d8049cce8ab698464115db8d72)
+        ;
+
+        
+    
+    
+            var marker_1acb6e8baeeb01b479eaf353d0834e2c = L.marker(
+                [50.098333, 14.407471],
+                {
+}
+            ).addTo(map_50ab986f67c8416bae351c91f02b0484);
+        
+    
+        var popup_fe1de2fd9b5b725566e639ad76edf01f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_11eafba6a147676032f8bba4e5c1a8f5 = $(`<div id="html_11eafba6a147676032f8bba4e5c1a8f5" style="width: 100.0%; height: 100.0%;"><b>Pelléova</b><br>Trasa A 160</div>`)[0];
+                popup_fe1de2fd9b5b725566e639ad76edf01f.setContent(html_11eafba6a147676032f8bba4e5c1a8f5);
+            
+        
+
+        marker_1acb6e8baeeb01b479eaf353d0834e2c.bindPopup(popup_fe1de2fd9b5b725566e639ad76edf01f)
+        ;
+
+        
+    
+    
+            var marker_c2619f100aeb6177c8c47892415b0bf9 = L.marker(
+                [50.061932, 14.418152],
+                {
+}
+            ).addTo(map_50ab986f67c8416bae351c91f02b0484);
+        
+    
+        var popup_0c7fb9b2fae5cdc5dd405b0ba35295a9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0e10dfa3320a49e23e8875b77aac7375 = $(`<div id="html_0e10dfa3320a49e23e8875b77aac7375" style="width: 100.0%; height: 100.0%;"><b>Podolské nábřeží - vozovka</b><br>Trasa A 2</div>`)[0];
+                popup_0c7fb9b2fae5cdc5dd405b0ba35295a9.setContent(html_0e10dfa3320a49e23e8875b77aac7375);
+            
+        
+
+        marker_c2619f100aeb6177c8c47892415b0bf9.bindPopup(popup_0c7fb9b2fae5cdc5dd405b0ba35295a9)
+        ;
+
+        
+    
+    
+            var marker_12e1743299b26b6d5a39f07e9911d456 = L.marker(
+                [50.061932, 14.418152],
+                {
+}
+            ).addTo(map_50ab986f67c8416bae351c91f02b0484);
+        
+    
+        var popup_ef218d8e2d23b1d6256415f790bc328a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6e073d245f4992dce0a8e53be3daaafe = $(`<div id="html_6e073d245f4992dce0a8e53be3daaafe" style="width: 100.0%; height: 100.0%;"><b>Podolské nábřeží - vozovka</b><br>Trasa A 2</div>`)[0];
+                popup_ef218d8e2d23b1d6256415f790bc328a.setContent(html_6e073d245f4992dce0a8e53be3daaafe);
+            
+        
+
+        marker_12e1743299b26b6d5a39f07e9911d456.bindPopup(popup_ef218d8e2d23b1d6256415f790bc328a)
+        ;
+
+        
+    
+    
+            var marker_dc907bc6b6aa060e8023f0ca322f3e54 = L.marker(
+                [50.1174747, 14.391871],
+                {
+}
+            ).addTo(map_50ab986f67c8416bae351c91f02b0484);
+        
+    
+        var popup_b84c743476c3d9e6bae6085a0a217497 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_36b3bc8dc046eb1e6ff49d0deecb7673 = $(`<div id="html_36b3bc8dc046eb1e6ff49d0deecb7673" style="width: 100.0%; height: 100.0%;"><b>Podbabská</b><br>Trasa A 1</div>`)[0];
+                popup_b84c743476c3d9e6bae6085a0a217497.setContent(html_36b3bc8dc046eb1e6ff49d0deecb7673);
+            
+        
+
+        marker_dc907bc6b6aa060e8023f0ca322f3e54.bindPopup(popup_b84c743476c3d9e6bae6085a0a217497)
+        ;
+
+        
+    
+    
+            var marker_4e15971e4da58df83e8e62c3b88b2ae1 = L.marker(
+                [50.1174747, 14.391871],
+                {
+}
+            ).addTo(map_50ab986f67c8416bae351c91f02b0484);
+        
+    
+        var popup_cfc690b6774fd632f7b94ee04e3a26a6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_42599a0388e4a4df4f1d8b7b5c061c7a = $(`<div id="html_42599a0388e4a4df4f1d8b7b5c061c7a" style="width: 100.0%; height: 100.0%;"><b>Podbabská</b><br>Trasa A 1</div>`)[0];
+                popup_cfc690b6774fd632f7b94ee04e3a26a6.setContent(html_42599a0388e4a4df4f1d8b7b5c061c7a);
+            
+        
+
+        marker_4e15971e4da58df83e8e62c3b88b2ae1.bindPopup(popup_cfc690b6774fd632f7b94ee04e3a26a6)
+        ;
+
+        
+    
+    
+            var marker_a62404f9697ae80324bf52cf1ec3ea50 = L.marker(
+                [50.1145896, 14.4136674],
+                {
+}
+            ).addTo(map_50ab986f67c8416bae351c91f02b0484);
+        
+    
+        var popup_3e524bceeea1f82b376cd7f689712024 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b05c7dbdf329472536b86d2a5ddc2542 = $(`<div id="html_b05c7dbdf329472536b86d2a5ddc2542" style="width: 100.0%; height: 100.0%;"><b>Povltavská</b><br>Trasa A 2</div>`)[0];
+                popup_3e524bceeea1f82b376cd7f689712024.setContent(html_b05c7dbdf329472536b86d2a5ddc2542);
+            
+        
+
+        marker_a62404f9697ae80324bf52cf1ec3ea50.bindPopup(popup_3e524bceeea1f82b376cd7f689712024)
+        ;
+
+        
+    
+    
+            var marker_2a63133af1355f7e0a2a69dc268b01be = L.marker(
+                [50.1145896, 14.4136674],
+                {
+}
+            ).addTo(map_50ab986f67c8416bae351c91f02b0484);
+        
+    
+        var popup_e2d69266aa44c7db0c60773ccc3a0bd7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fdc068ca98b397d8da433d25d4937b00 = $(`<div id="html_fdc068ca98b397d8da433d25d4937b00" style="width: 100.0%; height: 100.0%;"><b>Povltavská</b><br>Trasa A 2</div>`)[0];
+                popup_e2d69266aa44c7db0c60773ccc3a0bd7.setContent(html_fdc068ca98b397d8da433d25d4937b00);
+            
+        
+
+        marker_2a63133af1355f7e0a2a69dc268b01be.bindPopup(popup_e2d69266aa44c7db0c60773ccc3a0bd7)
+        ;
+
+        
+    
+    
+            var marker_76f1b836fe2a1ccc3672df981749dcc7 = L.marker(
+                [50.094067, 14.437973],
+                {
+}
+            ).addTo(map_50ab986f67c8416bae351c91f02b0484);
+        
+    
+        var popup_6dcecb88465cc2f7c857c7c89bcad657 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_aa08c62c89ddc1d2ab3440d62e6f0d7d = $(`<div id="html_aa08c62c89ddc1d2ab3440d62e6f0d7d" style="width: 100.0%; height: 100.0%;"><b>Rohanské nábřeží</b><br>Trasa A 2</div>`)[0];
+                popup_6dcecb88465cc2f7c857c7c89bcad657.setContent(html_aa08c62c89ddc1d2ab3440d62e6f0d7d);
+            
+        
+
+        marker_76f1b836fe2a1ccc3672df981749dcc7.bindPopup(popup_6dcecb88465cc2f7c857c7c89bcad657)
+        ;
+
+        
+    
+    
+            var marker_ebe97d99c9fab49a667887444e24636e = L.marker(
+                [50.094067, 14.437973],
+                {
+}
+            ).addTo(map_50ab986f67c8416bae351c91f02b0484);
+        
+    
+        var popup_b6e23189046fc10aa4fb16a9f6d29289 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0c9cbd101ee42c3b2c7001b4194bc3c9 = $(`<div id="html_0c9cbd101ee42c3b2c7001b4194bc3c9" style="width: 100.0%; height: 100.0%;"><b>Rohanské nábřeží</b><br>Trasa A 2</div>`)[0];
+                popup_b6e23189046fc10aa4fb16a9f6d29289.setContent(html_0c9cbd101ee42c3b2c7001b4194bc3c9);
+            
+        
+
+        marker_ebe97d99c9fab49a667887444e24636e.bindPopup(popup_b6e23189046fc10aa4fb16a9f6d29289)
+        ;
+
+        
+    
+    
+            var marker_925f615a299245fac76a7784812ddf15 = L.marker(
+                [50.0118531, 14.5008735],
+                {
+}
+            ).addTo(map_50ab986f67c8416bae351c91f02b0484);
+        
+    
+        var popup_a883da740f8cb409a01299599ae419d9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b07f3c3951053fb25971562de998c4ff = $(`<div id="html_b07f3c3951053fb25971562de998c4ff" style="width: 100.0%; height: 100.0%;"><b>Šeberov</b><br>Trasa A 21</div>`)[0];
+                popup_a883da740f8cb409a01299599ae419d9.setContent(html_b07f3c3951053fb25971562de998c4ff);
+            
+        
+
+        marker_925f615a299245fac76a7784812ddf15.bindPopup(popup_a883da740f8cb409a01299599ae419d9)
+        ;
+
+        
+    
+    
+            var marker_b2c988e20d5d3fdad97fdfeb5c481672 = L.marker(
+                [50.0118531, 14.5008735],
+                {
+}
+            ).addTo(map_50ab986f67c8416bae351c91f02b0484);
+        
+    
+        var popup_1d9b2400d6466a0f722dd57507878ccf = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7067507d59b6c2ce45f9455d62eb141d = $(`<div id="html_7067507d59b6c2ce45f9455d62eb141d" style="width: 100.0%; height: 100.0%;"><b>Šeberov</b><br>Trasa A 21</div>`)[0];
+                popup_1d9b2400d6466a0f722dd57507878ccf.setContent(html_7067507d59b6c2ce45f9455d62eb141d);
+            
+        
+
+        marker_b2c988e20d5d3fdad97fdfeb5c481672.bindPopup(popup_1d9b2400d6466a0f722dd57507878ccf)
+        ;
+
+        
+    
+    
+            var marker_a16e47fef42dda1a131d6e6538b37dd8 = L.marker(
+                [50.0842178, 14.4133714],
+                {
+}
+            ).addTo(map_50ab986f67c8416bae351c91f02b0484);
+        
+    
+        var popup_ff73d7ce60e0d1058579d395981299b5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3f6db5ae00d68a1796595dfb99aec094 = $(`<div id="html_3f6db5ae00d68a1796595dfb99aec094" style="width: 100.0%; height: 100.0%;"><b>Smetanovo nábřeží</b><br>Trasa A2</div>`)[0];
+                popup_ff73d7ce60e0d1058579d395981299b5.setContent(html_3f6db5ae00d68a1796595dfb99aec094);
+            
+        
+
+        marker_a16e47fef42dda1a131d6e6538b37dd8.bindPopup(popup_ff73d7ce60e0d1058579d395981299b5)
+        ;
+
+        
+    
+    
+            var marker_432db47c5df839387b14a90019cda17f = L.marker(
+                [50.0842178, 14.4133714],
+                {
+}
+            ).addTo(map_50ab986f67c8416bae351c91f02b0484);
+        
+    
+        var popup_8acdda547d04f09c46eeea4a211da573 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2cfc9981d4b5a010f56a85c3e87870d9 = $(`<div id="html_2cfc9981d4b5a010f56a85c3e87870d9" style="width: 100.0%; height: 100.0%;"><b>Smetanovo nábřeží</b><br>Trasa A2</div>`)[0];
+                popup_8acdda547d04f09c46eeea4a211da573.setContent(html_2cfc9981d4b5a010f56a85c3e87870d9);
+            
+        
+
+        marker_432db47c5df839387b14a90019cda17f.bindPopup(popup_8acdda547d04f09c46eeea4a211da573)
+        ;
+
+        
+    
+    
+            var marker_88048f5596786793624c2eeea9413c6c = L.marker(
+                [49.995005244109, 14.398425221443],
+                {
+}
+            ).addTo(map_50ab986f67c8416bae351c91f02b0484);
+        
+    
+        var popup_66c6ab7d8c68e7ed6ab8f57670492264 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_99700f4887e8a9f3a03296281a29811f = $(`<div id="html_99700f4887e8a9f3a03296281a29811f" style="width: 100.0%; height: 100.0%;"><b>Lahovičky (Strakonická)</b><br>Trasa A 1</div>`)[0];
+                popup_66c6ab7d8c68e7ed6ab8f57670492264.setContent(html_99700f4887e8a9f3a03296281a29811f);
+            
+        
+
+        marker_88048f5596786793624c2eeea9413c6c.bindPopup(popup_66c6ab7d8c68e7ed6ab8f57670492264)
+        ;
+
+        
+    
+    
+            var marker_c95a6ba752ce9dbf5b88164375b5a408 = L.marker(
+                [49.995005244109, 14.398425221443],
+                {
+}
+            ).addTo(map_50ab986f67c8416bae351c91f02b0484);
+        
+    
+        var popup_5488440402b059656975d4991689dce0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e39d10bb96ce44f6cc11b9145d7f884c = $(`<div id="html_e39d10bb96ce44f6cc11b9145d7f884c" style="width: 100.0%; height: 100.0%;"><b>Lahovičky (Strakonická)</b><br>Trasa A 1</div>`)[0];
+                popup_5488440402b059656975d4991689dce0.setContent(html_e39d10bb96ce44f6cc11b9145d7f884c);
+            
+        
+
+        marker_c95a6ba752ce9dbf5b88164375b5a408.bindPopup(popup_5488440402b059656975d4991689dce0)
+        ;
+
+        
+    
+    
+            var marker_4b2eac4dec3a439f6803e8bb3e119627 = L.marker(
+                [50.034619532046, 14.443668723106],
+                {
+}
+            ).addTo(map_50ab986f67c8416bae351c91f02b0484);
+        
+    
+        var popup_009e446506b63d62a3d1fda71d9e5fcc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_15399fb0b659f8117b755e1c5dae7a13 = $(`<div id="html_15399fb0b659f8117b755e1c5dae7a13" style="width: 100.0%; height: 100.0%;"><b>Krč (Sulická)</b><br>Trasa A 22</div>`)[0];
+                popup_009e446506b63d62a3d1fda71d9e5fcc.setContent(html_15399fb0b659f8117b755e1c5dae7a13);
+            
+        
+
+        marker_4b2eac4dec3a439f6803e8bb3e119627.bindPopup(popup_009e446506b63d62a3d1fda71d9e5fcc)
+        ;
+
+        
+    
+    
+            var marker_297b8fad37c3b73b4d7d4ff8cfb0a111 = L.marker(
+                [50.034619532046, 14.443668723106],
+                {
+}
+            ).addTo(map_50ab986f67c8416bae351c91f02b0484);
+        
+    
+        var popup_513bacb5da0a641d0a25b2ca97a62294 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3dc146bb28b297c8f5feb6b51bf5843e = $(`<div id="html_3dc146bb28b297c8f5feb6b51bf5843e" style="width: 100.0%; height: 100.0%;"><b>Krč (Sulická)</b><br>Trasa A 22</div>`)[0];
+                popup_513bacb5da0a641d0a25b2ca97a62294.setContent(html_3dc146bb28b297c8f5feb6b51bf5843e);
+            
+        
+
+        marker_297b8fad37c3b73b4d7d4ff8cfb0a111.bindPopup(popup_513bacb5da0a641d0a25b2ca97a62294)
+        ;
+
+        
+    
+    
+            var marker_853c34dca0bf05d86bb92060ccf9e773 = L.marker(
+                [50.118771, 14.382879],
+                {
+}
+            ).addTo(map_50ab986f67c8416bae351c91f02b0484);
+        
+    
+        var popup_c3b7967baabde4f006e8f5f7e0cb2002 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fa80177eae1dd5a420986a9dd57192a4 = $(`<div id="html_fa80177eae1dd5a420986a9dd57192a4" style="width: 100.0%; height: 100.0%;"><b>V Šáreckém údolí</b><br>Trasa A 17</div>`)[0];
+                popup_c3b7967baabde4f006e8f5f7e0cb2002.setContent(html_fa80177eae1dd5a420986a9dd57192a4);
+            
+        
+
+        marker_853c34dca0bf05d86bb92060ccf9e773.bindPopup(popup_c3b7967baabde4f006e8f5f7e0cb2002)
+        ;
+
+        
+    
+    
+            var marker_ba79683f0c00aa8cc3c2ab9cce51fd31 = L.marker(
+                [50.118771, 14.382879],
+                {
+}
+            ).addTo(map_50ab986f67c8416bae351c91f02b0484);
+        
+    
+        var popup_37aeb3bdc43a5c63a29a11732e7cf902 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ea563a3ac9d0b7fad115a5548d04fa9c = $(`<div id="html_ea563a3ac9d0b7fad115a5548d04fa9c" style="width: 100.0%; height: 100.0%;"><b>V Šáreckém údolí</b><br>Trasa A 17</div>`)[0];
+                popup_37aeb3bdc43a5c63a29a11732e7cf902.setContent(html_ea563a3ac9d0b7fad115a5548d04fa9c);
+            
+        
+
+        marker_ba79683f0c00aa8cc3c2ab9cce51fd31.bindPopup(popup_37aeb3bdc43a5c63a29a11732e7cf902)
+        ;
+
+        
+    
+    
+            var marker_a2bdee0e2113c0275f41b379d21d242e = L.marker(
+                [50.111242315108, 14.417871236801],
+                {
+}
+            ).addTo(map_50ab986f67c8416bae351c91f02b0484);
+        
+    
+        var popup_9a7ecc360c6b4ef9013c53af9ce70abe = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7735a6e739680434c5ee5a061bbd6e03 = $(`<div id="html_7735a6e739680434c5ee5a061bbd6e03" style="width: 100.0%; height: 100.0%;"><b>Císařský ostrov</b><br>Trasa A 310</div>`)[0];
+                popup_9a7ecc360c6b4ef9013c53af9ce70abe.setContent(html_7735a6e739680434c5ee5a061bbd6e03);
+            
+        
+
+        marker_a2bdee0e2113c0275f41b379d21d242e.bindPopup(popup_9a7ecc360c6b4ef9013c53af9ce70abe)
+        ;
+
+        
+    
+    
+            var marker_1bcd9fd996f2d7f5a89d00f7a16fa820 = L.marker(
+                [50.111242315108, 14.417871236801],
+                {
+}
+            ).addTo(map_50ab986f67c8416bae351c91f02b0484);
+        
+    
+        var popup_97c9feccee119a87c8a1e3945656e3d7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d8d2c207e9a8b83d1592c76b0b4cc681 = $(`<div id="html_d8d2c207e9a8b83d1592c76b0b4cc681" style="width: 100.0%; height: 100.0%;"><b>Císařský ostrov</b><br>Trasa A 310</div>`)[0];
+                popup_97c9feccee119a87c8a1e3945656e3d7.setContent(html_d8d2c207e9a8b83d1592c76b0b4cc681);
+            
+        
+
+        marker_1bcd9fd996f2d7f5a89d00f7a16fa820.bindPopup(popup_97c9feccee119a87c8a1e3945656e3d7)
+        ;
+
+        
+    
+    
+            var marker_1cbb64831c3168e72a108b3001e64aee = L.marker(
+                [50.10495, 14.502937],
+                {
+}
+            ).addTo(map_50ab986f67c8416bae351c91f02b0484);
+        
+    
+        var popup_d2d428798a825d5eebbf391784f33018 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_209e58e1a8d4ae1c2f4bce19fdbe8d1d = $(`<div id="html_209e58e1a8d4ae1c2f4bce19fdbe8d1d" style="width: 100.0%; height: 100.0%;"><b>Stezka okolo Rokytky</b><br>Trasa A 26</div>`)[0];
+                popup_d2d428798a825d5eebbf391784f33018.setContent(html_209e58e1a8d4ae1c2f4bce19fdbe8d1d);
+            
+        
+
+        marker_1cbb64831c3168e72a108b3001e64aee.bindPopup(popup_d2d428798a825d5eebbf391784f33018)
+        ;
+
+        
+    
+    
+            var marker_ed9c9753b48a5127eae5af87102b8db2 = L.marker(
+                [50.10495, 14.502937],
+                {
+}
+            ).addTo(map_50ab986f67c8416bae351c91f02b0484);
+        
+    
+        var popup_06956510a325e99c5600bb1554b2838e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ef00246eb4a3fcb28300589e99c39f4c = $(`<div id="html_ef00246eb4a3fcb28300589e99c39f4c" style="width: 100.0%; height: 100.0%;"><b>Stezka okolo Rokytky</b><br>Trasa A 26</div>`)[0];
+                popup_06956510a325e99c5600bb1554b2838e.setContent(html_ef00246eb4a3fcb28300589e99c39f4c);
+            
+        
+
+        marker_ed9c9753b48a5127eae5af87102b8db2.bindPopup(popup_06956510a325e99c5600bb1554b2838e)
+        ;
+
+        
+    
+    
+            var marker_1a55d80b5af1fd5ca6f824dd50efbb24 = L.marker(
+                [50.086846, 14.44444],
+                {
+}
+            ).addTo(map_50ab986f67c8416bae351c91f02b0484);
+        
+    
+        var popup_1cf67a70cea83c4286953fd9af461314 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c56d2b4dc4899bab772ed6c835963a7f = $(`<div id="html_c56d2b4dc4899bab772ed6c835963a7f" style="width: 100.0%; height: 100.0%;"><b>Drážní stezka - Vítkov</b><br>Trasa A 25</div>`)[0];
+                popup_1cf67a70cea83c4286953fd9af461314.setContent(html_c56d2b4dc4899bab772ed6c835963a7f);
+            
+        
+
+        marker_1a55d80b5af1fd5ca6f824dd50efbb24.bindPopup(popup_1cf67a70cea83c4286953fd9af461314)
+        ;
+
+        
+    
+    
+            var marker_feeabe93a46970dd703ca3064836eae4 = L.marker(
+                [50.086846, 14.44444],
+                {
+}
+            ).addTo(map_50ab986f67c8416bae351c91f02b0484);
+        
+    
+        var popup_102bc2bf6b9932438f278c6460f930ba = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e2d5814a091199b0bc0845e1a0245d80 = $(`<div id="html_e2d5814a091199b0bc0845e1a0245d80" style="width: 100.0%; height: 100.0%;"><b>Drážní stezka - Vítkov</b><br>Trasa A 25</div>`)[0];
+                popup_102bc2bf6b9932438f278c6460f930ba.setContent(html_e2d5814a091199b0bc0845e1a0245d80);
+            
+        
+
+        marker_feeabe93a46970dd703ca3064836eae4.bindPopup(popup_102bc2bf6b9932438f278c6460f930ba)
+        ;
+
+        
+    
+    
+            var marker_43353561b4cc7c408e6fb0378dffa4fb = L.marker(
+                [50.086846, 14.44444],
+                {
+}
+            ).addTo(map_50ab986f67c8416bae351c91f02b0484);
+        
+    
+        var popup_8f87a75a500b50107ca8c11afd91e548 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d9253fd71cc747a95f23a1d6487085b7 = $(`<div id="html_d9253fd71cc747a95f23a1d6487085b7" style="width: 100.0%; height: 100.0%;"><b>Drážní stezka - Vítkov</b><br>Trasa A 25</div>`)[0];
+                popup_8f87a75a500b50107ca8c11afd91e548.setContent(html_d9253fd71cc747a95f23a1d6487085b7);
+            
+        
+
+        marker_43353561b4cc7c408e6fb0378dffa4fb.bindPopup(popup_8f87a75a500b50107ca8c11afd91e548)
+        ;
+
+        
+    
+    
+            var marker_4d7f2c7d18aaabdcd8b0296a891869e6 = L.marker(
+                [50.003431, 14.402936],
+                {
+}
+            ).addTo(map_50ab986f67c8416bae351c91f02b0484);
+        
+    
+        var popup_4b3469ce266db21475ca336e1cc8f37d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fb1cf039e1aee5534ff86d19747505c8 = $(`<div id="html_fb1cf039e1aee5534ff86d19747505c8" style="width: 100.0%; height: 100.0%;"><b>Modřany</b><br>Trasa A 2</div>`)[0];
+                popup_4b3469ce266db21475ca336e1cc8f37d.setContent(html_fb1cf039e1aee5534ff86d19747505c8);
+            
+        
+
+        marker_4d7f2c7d18aaabdcd8b0296a891869e6.bindPopup(popup_4b3469ce266db21475ca336e1cc8f37d)
+        ;
+
+        
+    
+    
+            var marker_be2451c1cb239c01ad268ee3562892b4 = L.marker(
+                [50.003431, 14.402936],
+                {
+}
+            ).addTo(map_50ab986f67c8416bae351c91f02b0484);
+        
+    
+        var popup_ff8553e1bde985dc5b9da856b323c629 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b7cb23219968640e039daa8ab50202e3 = $(`<div id="html_b7cb23219968640e039daa8ab50202e3" style="width: 100.0%; height: 100.0%;"><b>Modřany</b><br>Trasa A 2</div>`)[0];
+                popup_ff8553e1bde985dc5b9da856b323c629.setContent(html_b7cb23219968640e039daa8ab50202e3);
+            
+        
+
+        marker_be2451c1cb239c01ad268ee3562892b4.bindPopup(popup_ff8553e1bde985dc5b9da856b323c629)
+        ;
+
+        
+    
+    
+            var marker_e5837b4ca5ea7e31a19331a9b14493c5 = L.marker(
+                [50.066464, 14.444736],
+                {
+}
+            ).addTo(map_50ab986f67c8416bae351c91f02b0484);
+        
+    
+        var popup_3fb89983495f3ab367799ae0e8f79716 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6d4a50e44e1f41b89f034839f22c316b = $(`<div id="html_6d4a50e44e1f41b89f034839f22c316b" style="width: 100.0%; height: 100.0%;"><b>Vršovická</b><br>Trasa A 23</div>`)[0];
+                popup_3fb89983495f3ab367799ae0e8f79716.setContent(html_6d4a50e44e1f41b89f034839f22c316b);
+            
+        
+
+        marker_e5837b4ca5ea7e31a19331a9b14493c5.bindPopup(popup_3fb89983495f3ab367799ae0e8f79716)
+        ;
+
+        
+    
+    
+            var marker_7c8eb42feb1d38fa4ea7d2c3ce689df4 = L.marker(
+                [50.066464, 14.444736],
+                {
+}
+            ).addTo(map_50ab986f67c8416bae351c91f02b0484);
+        
+    
+        var popup_68532e8532b5f07475f48edf043b37dc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bb68a90a32e3a3f90594944a7c0bcdce = $(`<div id="html_bb68a90a32e3a3f90594944a7c0bcdce" style="width: 100.0%; height: 100.0%;"><b>Vršovická</b><br>Trasa A 23</div>`)[0];
+                popup_68532e8532b5f07475f48edf043b37dc.setContent(html_bb68a90a32e3a3f90594944a7c0bcdce);
+            
+        
+
+        marker_7c8eb42feb1d38fa4ea7d2c3ce689df4.bindPopup(popup_68532e8532b5f07475f48edf043b37dc)
+        ;
+
+        
+    
+    
+            var marker_4e46cdc834ba1d60c2c3fbeb6c91f802 = L.marker(
+                [50.0704264, 14.3857008],
+                {
+}
+            ).addTo(map_50ab986f67c8416bae351c91f02b0484);
+        
+    
+        var popup_1423db4c24809f5d95cd543cfe565a54 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_42f633e28c0db15b457fbf4d84885c8b = $(`<div id="html_42f633e28c0db15b457fbf4d84885c8b" style="width: 100.0%; height: 100.0%;"><b>Košíře</b><br>Trasa A 14</div>`)[0];
+                popup_1423db4c24809f5d95cd543cfe565a54.setContent(html_42f633e28c0db15b457fbf4d84885c8b);
+            
+        
+
+        marker_4e46cdc834ba1d60c2c3fbeb6c91f802.bindPopup(popup_1423db4c24809f5d95cd543cfe565a54)
+        ;
+
+        
+    
+    
+            var marker_e300381a973cd52a1aa8b1d383f2863e = L.marker(
+                [50.143132, 14.39908],
+                {
+}
+            ).addTo(map_50ab986f67c8416bae351c91f02b0484);
+        
+    
+        var popup_be88e29aa67e96ac6036ce018988f2cb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_19dfb3214f190e7894c48378865fcda5 = $(`<div id="html_19dfb3214f190e7894c48378865fcda5" style="width: 100.0%; height: 100.0%;"><b>V Zámcích</b><br>Trasa A2</div>`)[0];
+                popup_be88e29aa67e96ac6036ce018988f2cb.setContent(html_19dfb3214f190e7894c48378865fcda5);
+            
+        
+
+        marker_e300381a973cd52a1aa8b1d383f2863e.bindPopup(popup_be88e29aa67e96ac6036ce018988f2cb)
+        ;
+
+        
+    
+    
+            var marker_e641d0f80c94973b32676262d0481f81 = L.marker(
+                [50.143132, 14.39908],
+                {
+}
+            ).addTo(map_50ab986f67c8416bae351c91f02b0484);
+        
+    
+        var popup_01b88284499fdf9b51e8cc925f3804f3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1b290f3cab07a774e06e2f2068fa521c = $(`<div id="html_1b290f3cab07a774e06e2f2068fa521c" style="width: 100.0%; height: 100.0%;"><b>V Zámcích</b><br>Trasa A2</div>`)[0];
+                popup_01b88284499fdf9b51e8cc925f3804f3.setContent(html_1b290f3cab07a774e06e2f2068fa521c);
+            
+        
+
+        marker_e641d0f80c94973b32676262d0481f81.bindPopup(popup_01b88284499fdf9b51e8cc925f3804f3)
+        ;
+
+        
+    
+    
+            var marker_a7c5d190c9d56eabe6475837724ffbdd = L.marker(
+                [50.05949686563836, 14.419192187464143],
+                {
+}
+            ).addTo(map_50ab986f67c8416bae351c91f02b0484);
+        
+    
+        var popup_34a0b2c0853089ea45caafc6686e8040 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_25b76815c702acf3809f108164a3a52e = $(`<div id="html_25b76815c702acf3809f108164a3a52e" style="width: 100.0%; height: 100.0%;"><b>Praha - Podolí</b><br>Trasa </div>`)[0];
+                popup_34a0b2c0853089ea45caafc6686e8040.setContent(html_25b76815c702acf3809f108164a3a52e);
+            
+        
+
+        marker_a7c5d190c9d56eabe6475837724ffbdd.bindPopup(popup_34a0b2c0853089ea45caafc6686e8040)
+        ;
+
+        
+    
+    
+            var marker_11a9e55c21aac922d3bc62a30387b417 = L.marker(
+                [50.05949686563836, 14.419192187464143],
+                {
+}
+            ).addTo(map_50ab986f67c8416bae351c91f02b0484);
+        
+    
+        var popup_33d257f4d7eb4ef1092ec7aade565300 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8b8d8fecb17e68cfb75834af1c136702 = $(`<div id="html_8b8d8fecb17e68cfb75834af1c136702" style="width: 100.0%; height: 100.0%;"><b>Praha - Podolí</b><br>Trasa </div>`)[0];
+                popup_33d257f4d7eb4ef1092ec7aade565300.setContent(html_8b8d8fecb17e68cfb75834af1c136702);
+            
+        
+
+        marker_11a9e55c21aac922d3bc62a30387b417.bindPopup(popup_33d257f4d7eb4ef1092ec7aade565300)
+        ;
+
+        
+    
+</script>
+</html>

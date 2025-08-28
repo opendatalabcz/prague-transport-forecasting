@@ -1,0 +1,79 @@
+name,id,route,updated_at,latitude,longitude,direction_id,direction_name
+Anděl (Plzeňská),camea-BC_AL-STPL,A14,2025-07-24T13:30:01.517Z,50.0718897,14.3986383,camea-BC_AL-ST,Štefánikova (centrum)
+Anděl (Plzeňská),camea-BC_AL-STPL,A14,2025-07-24T13:30:01.517Z,50.0718897,14.3986383,camea-BC_AL-PL,Plzeňská (z centra)
+Atletická,camea-BC_AT-STLA,A140,2025-07-24T13:30:01.517Z,50.0793736,14.3785794,camea-BC_AT-LA,Ladronka
+Atletická,camea-BC_AT-STLA,A140,2025-07-24T13:30:01.517Z,50.0793736,14.3785794,camea-BC_AT-ST,Strahov
+Barrandovský most,camea-BC_BS-BMZL,A 12,2025-07-24T13:30:01.517Z,50.0420991,14.407247,camea-BC_BS-ZL,Zlíchov
+Barrandovský most,camea-BC_BS-BMZL,A 12,2025-07-24T13:30:01.517Z,50.0420991,14.407247,camea-BC_BS-BM,Barrandovský most
+Chodov,camea-BC_CB-CHTU,A 22,2025-07-24T13:30:01.517Z,50.031113,14.492876,camea-BC_CB-CH,Chodov centrum
+Chodov,camea-BC_CB-CHTU,A 22,2025-07-24T13:30:01.517Z,50.031113,14.492876,camea-LO_CB-TU,ul. Türkova
+U Českých loděnic,camea-BC_CL-PVLI,A2,2025-07-24T13:30:01.517Z,50.1135103,14.4581003,camea-BC_CL-PV,Povltavská
+U Českých loděnic,camea-BC_CL-PVLI,A2,2025-07-24T13:30:01.517Z,50.1135103,14.4581003,camea-BC_CL-LI,Libeň
+Celetná,camea-BC_CT-OTPB,A 1,2025-07-24T13:30:01.517Z,50.087262,14.425974,camea-BC_CT-OT,Ovocný trh
+Celetná,camea-BC_CT-OTPB,A 1,2025-07-24T13:30:01.517Z,50.087262,14.425974,camea-BC_CT-PB,Prašná brána
+Divoká Šárka,camea-BC_DE-EVSA,A 33,2025-07-24T13:30:01.517Z,50.093562,14.320898,camea-LO_DE-SA,Šárka
+Divoká Šárka,camea-BC_DE-EVSA,A 33,2025-07-24T13:30:01.517Z,50.093562,14.320898,camea-LO_DE-EV,ul. Evropská
+Dukelských hrdinů,camea-BC_DS-KJVL,A 310,2025-07-24T13:30:01.517Z,50.0973149,14.432982,camea-BC_DS-KJ,centrum
+Dukelských hrdinů,camea-BC_DS-KJVL,A 310,2025-07-24T13:30:01.517Z,50.0973149,14.432982,camea-BC_DS-VL,z centra
+Dubeč,camea-BC_DU-KRST,A 24,2025-07-24T13:30:01.517Z,50.059714879868,14.594435691833,camea-DU-ST,Štěrboholy (Běchovice)
+Dubeč,camea-BC_DU-KRST,A 24,2025-07-24T13:30:01.517Z,50.059714879868,14.594435691833,camea-DU-KR,Uhříněves (Netluky)
+Elsnicovo náměstí x U Českých loděnic,camea-BC_EU-KTOT,A 2,2025-07-24T13:30:01.517Z,50.106999,14.470749,camea-BC_EU-KT,k Thomayerovým sadům
+Elsnicovo náměstí x U Českých loděnic,camea-BC_EU-KTOT,A 2,2025-07-24T13:30:01.517Z,50.106999,14.470749,camea-BC_EU-OT,od Thomayerových sadů
+Hybernská,camea-BC_HY-WINP,A25,2025-07-24T13:30:01.517Z,50.0872642,14.4344272,camea-BC_HY-NP,Na Příkopě
+Hybernská,camea-BC_HY-WINP,A25,2025-07-24T13:30:01.517Z,50.0872642,14.4344272,camea-BC_HY-WI,Wilsonova
+Hlubočepská,camea-BC_HZ-CE,A 12,2025-07-24T13:30:01.517Z,50.040233,14.403657,camea-BC_HZ-CE,centrum
+Hlubočepská,camea-BC_HZ-CE,A 12,2025-07-24T13:30:01.517Z,50.040233,14.403657,camea-BC_HZ-HL,Hlubočepy
+Jeremenkova,camea-BC_JG-PNPC,A 221,2025-07-24T13:30:01.517Z,50.046196,14.417109,camea-BC_JG-PC,Pankrác
+Jeremenkova,camea-BC_JG-PNPC,A 221,2025-07-24T13:30:01.517Z,50.046196,14.417109,camea-BC_JG-PN,Podolské nábřeží
+Kampa,camea-BC_KA-KMML,A1,2025-07-24T13:30:01.517Z,50.08312,14.4077472,camea-BC_KA-KM,Karlův most
+Kampa,camea-BC_KA-KMML,A1,2025-07-24T13:30:01.517Z,50.08312,14.4077472,camea-BC_KA-ML,most Legií
+Nábřeží Kapitána Jaroše,camea-BC_KJ-HRHO,A 1,2025-07-24T13:30:01.517Z,50.096722485653,14.433524608612,camea-KJ-HO,Libeň
+Nábřeží Kapitána Jaroše,camea-BC_KJ-HRHO,A 1,2025-07-24T13:30:01.517Z,50.096722485653,14.433524608612,camea-KJ-HR,Malá Strana
+Letňany,camea-BC_KO-LEPR,A 27,2025-07-24T13:30:01.518Z,50.1269227,14.507327,camea-BC_KO-LE,z centra
+Letňany,camea-BC_KO-LEPR,A 27,2025-07-24T13:30:01.518Z,50.1269227,14.507327,camea-BC_KO-PR,centrum
+Kolčavka,camea-BC_KO-VYHO,A 26,2025-07-24T13:30:01.518Z,50.109662,14.494891,camea-KO-HO,Holešovice
+Kolčavka,camea-BC_KO-VYHO,A 26,2025-07-24T13:30:01.518Z,50.109662,14.494891,camea-KO-VY,Vysočany
+Radotín,camea-BC_KR-RAZB,A 11,2025-07-24T13:30:01.518Z,49.9803678,14.3634271,camea-BC_KR-RA,Radotín
+Radotín,camea-BC_KR-RAZB,A 11,2025-07-24T13:30:01.518Z,49.9803678,14.3634271,camea-BC_KR-ZB,Zbraslav
+Mladoboleslavská,camea-BC_MB-PRVI,A267,2025-07-24T13:30:01.518Z,50.1256708,14.5346419,camea-BC_MB-PR,Prosek
+Mladoboleslavská,camea-BC_MB-PRVI,A267,2025-07-24T13:30:01.518Z,50.1256708,14.5346419,camea-BC_MB-VI,Vinoř
+Nuselský most,camea-BC_NM-CEKV,A 41,2025-07-24T13:30:01.518Z,50.0682472,14.430294,camea-BC_NM-CE,centrum
+Nuselský most,camea-BC_NM-CEKV,A 41,2025-07-24T13:30:01.518Z,50.0682472,14.430294,camea-BC_NM-KV,ul. 5. května
+Střešovice,camea-BC_NS-PAVL,A 165X,2025-07-24T13:30:01.518Z,50.0928879,14.371382,camea-BC_NS-PA,do centra
+Střešovice,camea-BC_NS-PAVL,A 165X,2025-07-24T13:30:01.518Z,50.0928879,14.371382,camea-LO_NS-VL,z centra
+Pelléova,camea-BC_PM-MHJA,A 160,2025-07-24T13:30:01.518Z,50.098333,14.407471,camea-PM-MH,Milady Horákové
+Pelléova,camea-BC_PM-MHJA,A 160,2025-07-24T13:30:01.518Z,50.098333,14.407471,camea-PM-JA,Jaselská
+Podolské nábřeží - vozovka,camea-BC_PN-VYBR2,A 2,2025-07-24T13:30:01.518Z,50.061932,14.418152,camea-PN-VY,do centra (Výtoň)
+Podolské nábřeží - vozovka,camea-BC_PN-VYBR2,A 2,2025-07-24T13:30:01.518Z,50.061932,14.418152,camea-PN-BR,z centra (Braník)
+Podbabská,camea-BC_PP-ROJP,A 1,2025-07-24T13:30:01.518Z,50.1174747,14.391871,camea-LO_PP-JP,ul. Jugoslávkých partyzánů
+Podbabská,camea-BC_PP-ROJP,A 1,2025-07-24T13:30:01.518Z,50.1174747,14.391871,camea-BC_PP-RO,ul. Roztocká
+Povltavská,camea-BC_PT-ZOVO,A 2,2025-07-24T13:30:01.518Z,50.1145896,14.4136674,camea-BC_PT-ZO,ZOO
+Povltavská,camea-BC_PT-ZOVO,A 2,2025-07-24T13:30:01.518Z,50.1145896,14.4136674,camea-BC_PT-VO, ul. Vodácká
+Rohanské nábřeží,camea-BC_RN-JK,A 2,2025-07-24T13:30:01.518Z,50.094067,14.437973,camea-RN-JO,do centra (náb. L. Svobody)
+Rohanské nábřeží,camea-BC_RN-JK,A 2,2025-07-24T13:30:01.518Z,50.094067,14.437973,camea-RN-KA,z centra (Karlín)
+Šeberov,camea-BC_SH-SEKU,A 21,2025-07-24T13:30:01.518Z,50.0118531,14.5008735,camea-BC_SH-SE,Šeberov
+Šeberov,camea-BC_SH-SEKU,A 21,2025-07-24T13:30:01.518Z,50.0118531,14.5008735,camea-BC_SH-KU,Kunratice
+Smetanovo nábřeží,camea-BC_SN-NDKM,A2,2025-07-24T13:30:01.518Z,50.0842178,14.4133714,camea-BC_SN-KM,Karlův most
+Smetanovo nábřeží,camea-BC_SN-NDKM,A2,2025-07-24T13:30:01.518Z,50.0842178,14.4133714,camea-BC_SN-ND,Národní divadlo
+Lahovičky (Strakonická),camea-BC_ST-RABA,A 1,2025-07-24T13:30:01.518Z,49.995005244109,14.398425221443,camea-ST-RA,z centra (Radotín)
+Lahovičky (Strakonická),camea-BC_ST-RABA,A 1,2025-07-24T13:30:01.518Z,49.995005244109,14.398425221443,camea-ST-BA,do centra (M. Chuchle)
+Krč (Sulická),camea-BC_SU-KRKA,A 22,2025-07-24T13:30:01.518Z,50.034619532046,14.443668723106,camea-SU-KR,Krč
+Krč (Sulická),camea-BC_SU-KRKA,A 22,2025-07-24T13:30:01.518Z,50.034619532046,14.443668723106,camea-SU-KA,Lhotka
+V Šáreckém údolí,camea-BC_SU-VS,A 17,2025-07-24T13:30:01.518Z,50.118771,14.382879,camea-SU-SE,Podbaba
+V Šáreckém údolí,camea-BC_SU-VS,A 17,2025-07-24T13:30:01.518Z,50.118771,14.382879,camea-SU-VO,Nebušice
+Císařský ostrov,camea-BC_TL-TRHO,A 310,2025-07-24T13:30:01.518Z,50.111242315108,14.417871236801,camea-TL-HO,do centra (Stromovka)
+Císařský ostrov,camea-BC_TL-TRHO,A 310,2025-07-24T13:30:01.518Z,50.111242315108,14.417871236801,camea-TL-TR,z centra (Trója)
+Stezka okolo Rokytky,camea-BC_VF-ARUE,A 26,2025-07-24T13:30:01.518Z,50.10495,14.502937,camea-BC_VF-AR,O2 Aréna
+Stezka okolo Rokytky,camea-BC_VF-ARUE,A 26,2025-07-24T13:30:01.518Z,50.10495,14.502937,camea-BC_VF-UE,ul. U Elektry
+Drážní stezka - Vítkov,camea-BC_VK-HRUP,A 25,2025-07-24T13:30:01.518Z,50.086846,14.44444,camea-BC_VK-SE,Seifertova
+Drážní stezka - Vítkov,camea-BC_VK-HRUP,A 25,2025-07-24T13:30:01.518Z,50.086846,14.44444,camea-BC_VK-UP,Seifertova
+Drážní stezka - Vítkov,camea-BC_VK-HRUP,A 25,2025-07-24T13:30:01.518Z,50.086846,14.44444,camea-BC_VK-HR,Hrdlořezy
+Modřany,camea-BC_VK-MOKO,A 2,2025-07-24T13:30:01.518Z,50.003431,14.402936,camea-BC_VK-MO,centrum
+Modřany,camea-BC_VK-MOKO,A 2,2025-07-24T13:30:01.518Z,50.003431,14.402936,camea-BC_VK-KO,z centra
+Vršovická,camea-BC_VR-ST,A 23,2025-07-24T13:30:01.518Z,50.066464,14.444736,camea-VR-VY,Nusle
+Vršovická,camea-BC_VR-ST,A 23,2025-07-24T13:30:01.518Z,50.066464,14.444736,camea-VR-ST,Strašnice
+Košíře,camea-BC_VS-CE,A 14,2025-07-24T13:30:01.518Z,50.0704264,14.3857008,camea-BC_VS-CE,centrum
+V Zámcích,camea-BC_ZA-KLBO,A2,2025-07-24T13:30:01.518Z,50.143132,14.39908,camea-BC_ZA-BO,Bohnice
+V Zámcích,camea-BC_ZA-KLBO,A2,2025-07-24T13:30:01.518Z,50.143132,14.39908,camea-BC_ZA-KL,Klecany
+Praha - Podolí,ecoCounter-100047647,,2025-07-24T13:30:04.212Z,50.05949686563836,14.419192187464143,ecoCounter-103047647,Praha Cyklisté do centra
+Praha - Podolí,ecoCounter-100047647,,2025-07-24T13:30:04.212Z,50.05949686563836,14.419192187464143,ecoCounter-104047647,Praha Cyklisté z centra
