@@ -10,8 +10,8 @@ df = pd.DataFrame({"date": dates})
 df["year"] = df["date"].dt.year
 df["month"] = df["date"].dt.month
 df["day"] = df["date"].dt.day
-df["weekday"] = df["date"].dt.day_name()
-df["weekend"] = df["weekday"].isin(["Saturday", "Sunday"]).astype(int)
+df["weekday"] = df["date"].dt.weekday   # Monday=0, Sunday=6
+df["weekend"] = df["weekday"].isin([5, 6]).astype(int)
 
 # České státní svátky
 cz_holidays = holidays.Czechia(years=range(2020, 2026))
@@ -76,15 +76,28 @@ def get_season(month):
 
 df["season"] = df["month"].apply(get_season)
 
-# 6. Covid lockdown úrovně (ručně zhruba podle reality v ČR)
+# 6. Covid lockdown úrovně (cca podle systému PES) - pouze od roku 2021
+# zdroje: 
+# - https://cs.wikipedia.org/wiki/Pr%C5%AFb%C4%9Bh_pandemie_covidu-19_v_%C4%8Cesku
+# - https://onemocneni-aktualne.mzcr.cz/pes
 def lockdown_level(d):
-    if date(2020, 3, 11) <= d.date() <= date(2020, 5, 10):
+    if date(2021, 1, 1) <= d.date() <= date(2021, 1, 13) or \
+       date(2021, 2, 23) <= d.date() <= date(2021, 3, 1):
+        return 5
+    if date(2021, 1, 14) <= d.date() <= date(2021, 2, 22) or \
+       date(2021, 3, 2) <= d.date() <= date(2021, 3, 23) or \
+       date(2021, 4, 12) <= d.date() <= date(2021, 4, 15):
+        return 4
+    if date(2021, 3, 24) <= d.date() <= date(2021, 4, 11) or \
+       date(2021, 4, 16) <= d.date() <= date(2021, 5, 26) or \
+       date(2021, 7, 3) <= d.date() <= date(2021, 7, 18) or \
+       date(2021, 9, 4) <= d.date() <= date(2021, 12, 31):
         return 3
-    if date(2020, 10, 5) <= d.date() <= date(2020, 12, 3):
+    if date(2021, 5, 27) <= d.date() <= date(2021, 7, 2) or \
+       date(2021, 7, 19) <= d.date() <= date(2021, 9, 3) or \
+       date(2022, 1, 1) <= d.date() <= date(2022, 2, 1):
         return 2
-    if date(2021, 2, 27) <= d.date() <= date(2021, 4, 11):
-        return 3
-    if date(2021, 11, 20) <= d.date() <= date(2021, 12, 31):
+    if date(2022, 2, 1) <= d.date() <= date(2021, 3, 31):
         return 1
     return 0
 
