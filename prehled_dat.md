@@ -31,18 +31,37 @@ Nejprve jsem o data požádala společnost Golemio, která zpracovává data a t
 Data možná získat za období od 1.6.2020
 
 https://registr.dopravniinfo.cz/cs/index.html
+dokumentace: https://registr.dopravniinfo.cz/cs/docs/x-format/cz-ndic_d2-fcd-v1.0-cs-html/concepts.html#stari-vstupnich-dat-fcd
 
-Sloupce, které by mohly být zajímavé:
-- source_identification - id daného úseku (viz TCM lokační tabulky)
-- measurement_or_calculation_time - čas získní záznamu
-- traffic_level (1-5)  
-  ![alt text](Cars/traffic_level.png)
-- ~~queue_exists~~ - konstantní hodnota False
-- ~~queue_length~~ - nemá hodnoty
-- average_vehicle_speed = aktuální průměrná rychlost
-- travel_time = aktuální průměrná dojezdová doba
-- free_flow_travel_time = doba volného průjezdu
-- free_flow_speed = rychlost volného průjezdu (často vozidla maximální povolená rychlost)
+Sloupce
+[Id] 	 identifikátor segmentu ze sady předdefinovaných míst - vyžádala jsem si cca 30 úseků, oba směry
+[CreateTimeUtc] 	 čas, pro který jsou data vypočtena
+[VD1_Count] 	 počet vozidel použitých pro výpočet hodnot; vozidla kumulovaná v plovoucím 5ti minutovém okně pro daný úsek; statistický vzorek - cca 3 až 5 procent vozidel z dopravního proudu
+[VD1a_CountCar] 	 počet osobních vozidel použitých pro výpočet hodnot
+[VD1b_CountTruck] 	 počet nákladních vozidel použitých pro výpočet hodnot
+[VD2_Speed] 	 aktuální rychlost dopravního proudu [km/h]
+[VD3_TravelTime] 	 aktuální dojezdová doba [s]
+[VD4_Delay] 	 aktuální zpoždění na definovaném segmentu [s]
+[VD5_FreeFlowSpeed] 	 rychlost volného průjezdu [km/h]
+[VD6_FreeFlowTime] 	 doba volného průjezdu [s]
+[VD7_Congestion]	informace, zda se na segmentu vyskytuje kolony
+[VD8_Reliability] 	 spolehlivost dat, která charakterizuje kvalitu datového vzorku [%]
+[VD9_ReactionTime] 	 doba, za kterou je systém schopen reagovat na změny rychlosti dopravního proudu v dopravní síti 
+[VD10_TrafficLevel] 	 stupeň dopravy dle zvyklostí v ČR
+[CongestionFrom] 	 začátek kolony [m] měřeno od počátku segmentu ve směru dopravního proudu
+[CongestionLength] 	 agregovaná délka kolony na všech úsecích segmentu [m]
+[VD2a_SpeedCar] 	 aktuální rychlost dopravního proudu osobních vozidel [km/h]
+[VD2b_SpeedTruck] 	 aktuální rychlost dopravního proudu nákladních vozidel [km/h]
+[VD7a_CongestionCar] 	 informace, zda se pro osobní vozidla na segmentu vyskytuje kolony
+[VD7b_CongestionTruck] 	 informace, zda se pro nákladní vozidla na segmentu vyskytuje kolony
+[VD5a_FreeFlowSpeedCar] 	 rychlost volného průjezdu osobní vozidla [km/h]
+[VD5b_FreeFlowSpeedTruck] 	 rychlost volného průjezdu nákladních vozidel [km/h]
+[CongestionLengthCar] 	 začátek kolony [m] pro osobní vozidla měřeno od počátku segmentu ve směru dopravního proudu
+[CongestionLengthTruck] 	začátek kolony [m] pro nákladní vozidla měřeno od počátku segmentu ve směru dopravního proudu
+[CongestionFromCar] 	agregovaná délka kolony osobních vozidel na všech úsecích segmentu [m]
+[CongestionFromTruck] 	 agregovaná délka kolony nákladních vozidel na všech úsecích segmentu [m]
+
+!!! Chybí data od 30. 4. 2022 do 15. 8. 2022 - kyberútok !!!
 
 O tato data jsem se nakonec rozhodla požídat přímo Ředitelství silnic a dálnic jakožto poskytovatele těchto dat. Tento zdroj chci využít jako primární. Pravděpodobně získám i údaj o počtu automobilů, které projely určitým úsekem. O konkrétní úseky aktuálně žádám.
 
