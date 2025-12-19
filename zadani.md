@@ -1,6 +1,6 @@
 ### Analýza a predikce dopravního zatížení v Praze
 Zadání práce:  
-Doprava ve městech představuje komplexní systém, jehož zatížení se v čase mění vlivem řady faktorů, jako jsou počasí, denní doba, den v týdnu či mimořádné události. Cílem této práce je zkoumat vztahy mezi jednotlivými dopravními módy (MHD, cyklistická doprava, automobilová doprava) a vytvořit predikční model pro odhad jejich zatížení na základě historických dat.  
+Doprava v Praze představuje komplexní systém, jehož zatížení se v čase mění vlivem řady faktorů, jako jsou počasí, denní doba, den v týdnu či mimořádné události. Cílem této práce je zkoumat konkrétní vliv těchto faktorů a také vztahy mezi jednotlivými dopravními módy (MHD, cyklistická doprava, automobilová doprava). Z výsledků zkoumání poté vytvořit predikční model pro odhad zatížení těchto módů na základě historických dat.  
 Cíle a dílčí úkoly práce:
 1) Ověřit dostupnost a získat data o dopravě v Praze za období 2021–2025, zejména:
     - počty cestujících v MHD,
