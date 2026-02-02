@@ -2,12 +2,14 @@
 Informace o počasí čerpám z https://opendata.chmi.cz/meteorology/climate/historical_csv/. Pracovat budu pouze s denními daty z jedné měřicí stanice a to z profesionální stanice Praha Karlov:
 - wsi: 0-20000-0-11519
 - gh_id: P1PKAR01
-- souřadnice: 14.4186,50.0675
+- souřadnice: 50.0692N, 14.4278E
 - nadmořská výška: 260.5 m. n. m.
 (zdroj: meta1.csv)
 
+Výšku sněhové pokrývky bylo nutné brát z jiné stanice, protože tato stanice od 1. 9. 2024 přestala tyto hodnoty měřit. Vybrala jsem tedy stanici Praha Vinohrady - Flora (0-203-0-11201020001).
+
 Zajímají mě konkrétně tyto veličiny:
-- Rychlost větru (F), m/s, 8.5 metrů nad zemí, průměr z měření v 07:00, 14:00 a 21:00
+- Rychlost větru (F), m/s, 8.5 metrů nad zemí, průměr z měření v 07:00, 14:00 a 21:00 (AVG)
 - Výška sněhu (SCE), cm, 0 metrů nad zemí, měřeno v 06:00 (viz dly-0-20000-0-11519-SCE.csv)
 - Srážka (SRA), mm, 1.11 metrů nad zemí, měřeno od 6:00 daného dne do 6:00 následujícího
 - Sluneční svit (SSV), hod, 1.5, měřeno od 00:00 do 24:00 daného dne
@@ -47,7 +49,7 @@ Sloupce
 [VD7_Congestion]	informace, zda se na segmentu vyskytuje kolony
 [VD8_Reliability] 	 spolehlivost dat, která charakterizuje kvalitu datového vzorku [%]
 [VD9_ReactionTime] 	 doba, za kterou je systém schopen reagovat na změny rychlosti dopravního proudu v dopravní síti 
-[VD10_TrafficLevel] 	 stupeň dopravy dle zvyklostí v ČR
+[VD10_TrafficLevel] 	 stupeň dopravy (1-5) dle zvyklostí v ČR
 [CongestionFrom] 	 začátek kolony [m] měřeno od počátku segmentu ve směru dopravního proudu
 [CongestionLength] 	 agregovaná délka kolony na všech úsecích segmentu [m]
 [VD2a_SpeedCar] 	 aktuální rychlost dopravního proudu osobních vozidel [km/h]
