@@ -2,9 +2,10 @@ import ijson
 import json
 import csv
 import requests
+import os
 
 url = "https://api.golemio.cz/v2/bicyclecounters"
-TOKEN = "os.getenv("GOLEMIO_API_KEY")"  # tvůj Golemio token
+TOKEN = os.getenv("GOLEMIO_API_KEY")
 
 params = {
     "latlng": "50.0805,14.467",  # souřadnice středu (Praha)

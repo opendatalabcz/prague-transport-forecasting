@@ -4,3 +4,8 @@
 # data:
 Cars/data/
 Cars/locations
+
+# catboost_info
+Cars/catboost_info/
+MHD/catboost_info/
+CycloData/catboost_info/

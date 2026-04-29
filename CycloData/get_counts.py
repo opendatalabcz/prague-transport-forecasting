@@ -2,8 +2,9 @@ import requests
 import csv
 from datetime import datetime, timedelta
 import time
+import os
 
-TOKEN = "os.getenv("GOLEMIO_API_KEY")"  # tvůj Golemio token
+TOKEN = os.getenv("GOLEMIO_API_KEY")  # tvůj Golemio token
 BASE_URL = "https://api.golemio.cz/v2/bicyclecounters/detections"
 
 # Seznam všech direction_id kamer
@@ -17,7 +18,7 @@ print(len(direction_ids))
 print(direction_ids)
 
 start_date = datetime(2020, 1, 1)
-end_date = datetime(2025, 10, 31)
+end_date = datetime(2025, 12, 31)
 
 # Výstupní CSV
 with open("CycloData/counts.csv", "w", newline="", encoding="utf-8") as csvfile:
