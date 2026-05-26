@@ -1,0 +1,8 @@
+pandas
+numpy
+holidays
+Flask
+catboost
+shap
+matplotlib
+gunicorn

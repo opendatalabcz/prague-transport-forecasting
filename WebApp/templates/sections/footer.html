@@ -1,0 +1,72 @@
+<footer class="bg-dark text-white py-0 mt-auto border-top border-secondary">
+    <div class="container-fluid px-3 px-md-3"> 
+        <div class="row align-items-center"> 
+            <div class="col-auto py-2"> 
+                <a href="https://fit.cvut.cz" target="_blank" class="d-inline-block">
+                    <img src="{{ url_for('static', filename='media_selection/logo-fit-cs-bila.svg') }}" 
+                         alt="FIT ČVUT" 
+                         style="height: 80px; width: auto; filter: brightness(0) invert(1);">
+                </a>
+            </div>
+
+            <div class="col text-center py-3">
+                <h6 class="small fw-bold mb-2 text-white">
+                    Bakalářská práce: Analýza a predikce dopravního zatížení v Praze
+                </h6>
+                <div class="text-white-50" style="font-size: 0.75rem; line-height: 1.4;">
+                    <p class="mb-1">
+                        Práce je dostupná v 
+                        <a href="https://dspace.cvut.cz/" target="_blank" class="text-white-50 text-decoration-underline">Digitální knihovně ČVUT</a> 
+                        a na 
+                        <a href="https://github.com/opendatalabcz/prague-transport-forecasting" target="_blank" class="text-white-50 text-decoration-underline">GitHubu</a>.
+                    </p>
+                    <p class="mb-1 px-lg-5 d-none d-md-block" style="opacity: 0.7;">
+                        Provozovatel neodpovídá za správnost a úplnost zpracovaných dat a informací, ani tato neověřuje a zříká se zodpovědnosti za veškeré škody a újmy, které by použitím těchto dat mohly vzniknout.
+                    </p>
+                    <p class="mb-0 fw-light">&copy; 2026 Hana Švecová</p>
+                </div>
+            </div>
+
+            <div class="col-auto py-2">
+                <a href="https://opendatalab.cz" target="_blank" class="d-inline-block">
+                    <img src="{{ url_for('static', filename='media_selection/logo_OpenDataLab.svg') }}" 
+                         alt="OpenDataLab" 
+                         style="height: 80px; width: auto;">
+                </a>
+            </div>
+
+        </div>
+    </div>
+</footer>
+
+<style>
+    /* Sticky footer layout */
+    body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+    main {
+        flex: 1;
+    }
+
+    footer img {
+        transition: transform 0.2s, opacity 0.2s;
+        max-width: 100%;
+        display: block;
+    }
+    
+    footer img:hover {
+        opacity: 0.8;
+        transform: scale(1.02); /* Jemné zvětšení při najetí */
+    }
+
+    /* Responzivní výška log pro menší displeje */
+    @media (max-width: 992px) {
+        footer img { height: 60px !important; }
+    }
+    @media (max-width: 768px) {
+        footer img { height: 40px !important; }
+        .col-8 h6 { font-size: 0.8rem; }
+    }
+</style>

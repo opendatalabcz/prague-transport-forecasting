@@ -1,0 +1,296 @@
+<section id="prediction">
+    <h2 class="section-title">Predikce</h2>
+    
+    <div class="soft-card mb-5 no-hover">
+        <form id="predictForm">
+            <div class="row g-3 align-items-end">
+                <div class="col-md-3">
+                    <label class="form-label fw-bold">Den v kalendáři</label>
+                    <input type="date" id="date" class="form-control" required>
+                </div>
+                <div class="col-md-3 custom-select-wrapper">
+                    <label class="form-label fw-bold">Průměrná teplota</label>
+                    <input type="hidden" id="temp" value="chladno">
+                    <div class="dropdown">
+                        <button class="form-control text-start d-flex justify-content-between align-items-center bg-white" 
+                                type="button" data-bs-toggle="dropdown" id="temp-button">
+                            <span>Chladno (6°C)</span>
+                            <i class="bi bi-chevron-down"></i>
+                        </button>
+                        <ul class="dropdown-menu w-100 shadow border-0">
+                            <li><a class="dropdown-item select-option" href="#" data-target="temp" data-value="mrazivo">Mrazivo (-3°C)</a></li>
+                            <li><a class="dropdown-item select-option active-option" href="#" data-target="temp" data-value="chladno">Chladno (6°C)</a></li>
+                            <li><a class="dropdown-item select-option" href="#" data-target="temp" data-value="mirne">Mírně (15°C)</a></li>
+                            <li><a class="dropdown-item select-option" href="#" data-target="temp" data-value="teplo">Horko (25°C)</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 custom-select-wrapper">
+                    <label class="form-label fw-bold">Délka slunečního svitu</label>
+                    <input type="hidden" id="sun" value="malo">
+                    <div class="dropdown">
+                        <button class="form-control text-start d-flex justify-content-between align-items-center bg-white" 
+                                type="button" data-bs-toggle="dropdown" id="sun-button">
+                            <span>8 h (celý den v zimě)</span>
+                            <i class="bi bi-chevron-down"></i>
+                        </button>
+                        <ul class="dropdown-menu w-100 shadow border-0 rounded-3">
+                            <li><a class="dropdown-item select-option" href="#" data-target="sun" data-value="0">0 h</a></li>
+                            <li><a class="dropdown-item select-option" href="#" data-target="sun" data-value="2">2 h</a></li>
+                            <li><a class="dropdown-item select-option" href="#" data-target="sun" data-value="4">4 h</a></li>
+                            <li><a class="dropdown-item select-option" href="#" data-target="sun" data-value="6">6 h</a></li>
+                            <li><a class="dropdown-item select-option active-option" href="#" data-target="sun" data-value="8">8 h (celý den v zimě)</a></li>
+                            <li><a class="dropdown-item select-option" href="#" data-target="sun" data-value="10">10 h</a></li>
+                            <li><a class="dropdown-item select-option" href="#" data-target="sun" data-value="12">12 h</a></li>
+                            <li><a class="dropdown-item select-option" href="#" data-target="sun" data-value="14">14 h (celý den v létě)</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 custom-select-wrapper">
+                    <label class="form-label fw-bold">Vítr</label>
+                    <input type="hidden" id="wind" value="malo">
+                    <div class="dropdown">
+                        <button class="form-control text-start d-flex justify-content-between align-items-center bg-white" 
+                                type="button" data-bs-toggle="dropdown" id="wind-button">
+                            <span>Středně silný</span>
+                            <i class="bi bi-chevron-down"></i>
+                        </button>
+                        <ul class="dropdown-menu w-100 shadow border-0">
+                            <li><a class="dropdown-item select-option" href="#" data-target="wind" data-value="slaby">Bezvětří/slabý</a></li>
+                            <li><a class="dropdown-item select-option active-option" href="#" data-target="wind" data-value="stredni">Středně silný</a></li>
+                            <li><a class="dropdown-item select-option" href="#" data-target="wind" data-value="silny">Velmi větrno</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 custom-select-wrapper">
+                    <label class="form-label fw-bold">Déšť</label>
+                    <input type="hidden" id="rain" value="zadny">
+                    <div class="dropdown">
+                        <button class="form-control text-start d-flex justify-content-between align-items-center bg-white" 
+                                type="button" data-bs-toggle="dropdown" id="rain-button">
+                            <span>Bez srážek</span>
+                            <i class="bi bi-chevron-down"></i>
+                        </button>
+                        <ul class="dropdown-menu w-100 shadow border-0">
+                            <li><a class="dropdown-item select-option" href="#" data-target="rain" data-value="zadny">Bez srážek</a></li>
+                            <li><a class="dropdown-item select-option active-option" href="#" data-target="rain" data-value="slaby">Slabý déšť (3 mm)</a></li>
+                            <li><a class="dropdown-item select-option" href="#" data-target="rain" data-value="stredni">Střední déšť (9 mm)</a></li>
+                            <li><a class="dropdown-item select-option" href="#" data-target="rain" data-value="silny">Vydatný/celodenní déšť (15 mm)</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 custom-select-wrapper">
+                    <label class="form-label fw-bold">Sníh</label>
+                    <input type="hidden" id="snow" value="zadny">
+                    <div class="dropdown">
+                        <button class="form-control text-start d-flex justify-content-between align-items-center bg-white" 
+                                type="button" data-bs-toggle="dropdown" id="snow-button">
+                            <span>Beze sněhu</span>
+                            <i class="bi bi-chevron-down"></i>
+                        </button>
+                        <ul class="dropdown-menu w-100 shadow border-0">
+                            <li><a class="dropdown-item select-option" href="#" data-target="snow" data-value="zadny">Beze sněhu</a></li>
+                            <li><a class="dropdown-item select-option active-option" href="#" data-target="poprasek" data-value="slaby">Poprašek</a></li>
+                            <li><a class="dropdown-item select-option" href="#" data-target="snow" data-value="zavej">Závěje</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <button type="submit" class="btn btn-dark w-100" style="background-color: var(--header-bg);">Spočítat predikci</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <div id="results-container" class="row g-4 text-center" style="opacity: 0.5;"> <div class="col-md-4">
+            <div class="soft-card no-hover border-top-cyklo">
+                <h4 class="title-cyklo"><i class="bi bi-bicycle display-7"></i> Cyklodoprava</h4>
+                <div id="res-bike" class="pred-value title-cyklo">-</div>
+                <p class="text-muted">Očekávané vytížení</p>
+                <button class="btn btn-sm btn-outline-secondary d-none" id="btn-shap-cyclo" data-bs-toggle="modal" data-bs-target="#shapModalCyclo">
+                    Proč je hodnota taková?
+                </button>
+            </div>
+        </div>
+        <div class="modal fade" id="shapModalCyclo" tabindex="-1">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content" style="border-radius: 20px;">
+                    <div class="modal-header border-0">
+                        <h5 class="modal-title fw-bold">Detailní interpretace modelu cyklodopravy</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-lg-7 text-center border-end">
+                                <img id="shap-img-placeholder-cyclo" src="" class="img-fluid" alt="SHAP graf">
+                                <p class="text-muted small mt-2">Graf SHAP Waterfall: Červená zvyšuje výslednou predikci, modrá ji snižuje.</p>
+                            </div>
+
+                            <div class="col-lg-5 ps-4">
+                                <h6>Co ovlivňuje predikci?</h6>
+                                <p class="small">
+                                    Zobrazená hodnota je <strong>celkový počet cyklistů</strong> predikovaný pro daný den.
+                                    Tato hodnota je následně převedena do kategorie vytížení (1–5) na základě kvantilů trénovacích dat. 
+                                    
+                                </p>
+                                
+                                <div class="feature-explanation scrollable-list" style="max-height: 450px; overflow-y: auto;">
+                                    <ul class="list-unstyled small">
+                                        <li class="mb-2"><strong>SUN_TEMP_inter:</strong> Interakce (vynásobení) mezi počtem slunečních hodin a teplotou.</li>
+                                        <li class="mb-2"><strong>TEMP_sq:</strong> Teplota na druhou.</li>
+                                        <li class="mb-2"><strong>lockdown_level:</strong> Úroveň omezení pohybu (z historických dat modelu).</li>
+                                        <li class="mb-2"><strong>doy_sin / doy_cos:</strong> Pozice dne v rámci roku. Zachycuje roční sezónnost (v zimě je hodnota doy_cos blízká 1, v létě je blízká -1; doy_sin naopak rozlišuje mezi jarem (1) a podzimem (-1)).</li>
+                                        <li class="mb-2"><strong>month_sin / month_cos:</strong> Vyjádření měsíce v roce pro zachycení měsíčních výkyvů (číselně jaro/léto/podzim/zima podobně jako u doy_sin/doy_cos).</li>
+                                        <li class="mb-2"><strong>month:</strong> Měsíc v roce (1-12).</li>
+                                        <li class="mb-2"><strong>weekday:</strong> Pořadí dne v týdnu (0 = pondělí, 6 = neděle).</li>
+                                        <li class="mb-2"><strong>RAIN:</strong> Množství srážek (mm) v daný den.</li>
+                                        <li class="mb-2"><strong>WIND:</strong> Průměrná rychlost větru (m/s).</li>
+                                        <li class="mb-2"><strong>holiday_proximity:</strong> Indikátor zda den předchází nebo následuje po volném dni.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="soft-card no-hover border-top-mhd">
+                <h4 class="title-mhd"><i class="bi bi-train-front display-7"></i> MHD</h4>
+                <div id="res-mhd" class="pred-value title-mhd">-</div>
+                <p class="text-muted">Očekávané vytížení</p>
+                <button class="btn btn-sm btn-outline-secondary d-none" id="btn-shap-mhd" data-bs-toggle="modal" data-bs-target="#shapModalMHD">
+                    Proč je hodnota taková?
+                </button>
+            </div>
+        </div>
+        <div class="modal fade" id="shapModalMHD" tabindex="-1">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content" style="border-radius: 20px;">
+                    <div class="modal-header border-0">
+                        <h5 class="modal-title fw-bold">Detailní interpretace modelu MHD</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-lg-7 text-center border-end">
+                                <img id="shap-img-placeholder-mhd" src="" class="img-fluid" alt="SHAP graf">
+                                <p class="text-muted small mt-2">Graf SHAP Waterfall: Červená zvyšuje výslednou predikci, modrá ji snižuje.</p>
+                            </div>
+
+                            <div class="col-lg-5 ps-4">
+                                <h6>Co ovlivňuje predikci?</h6>
+                                <p class="small">
+                                    Zobrazená hodnota je <strong>celkový počet cestujících</strong> predikovaný pro daný den.
+                                    Tato hodnota je následně převedena do kategorie vytížení (1–5) na základě kvantilů trénovacích dat. 
+                                </p>
+                                
+                                <div class="feature-explanation scrollable-list" style="max-height: 450px; overflow-y: auto;">
+                                    <ul class="list-unstyled small">
+                                        <li class="mb-2"><strong>weekday_sin / weekday_cos:</strong> Cyklické vyjádření dne v týdnu (zachovává vztah neděle-pondělí).</li>
+                                        <li class="mb-2"><strong>lockdown_level:</strong> Úroveň omezení pohybu (z historických dat modelu).</li>
+                                        <li class="mb-2"><strong>time_idx:</strong> Udává počet dní od začátku trénovacích dat.</li>
+                                        <li class="mb-2"><strong>doy_sin / doy_cos:</strong> Pozice dne v rámci roku. Zachycuje roční sezónnost (na jaře je hodnota doy_cos blízká 1, na podzim je blízká -1; doy_sin naopak rozlišuje mezi zimou (1) a létem (-1)).</li>
+                                        <li class="mb-2"><strong>holiday:</strong> Indikátor, zda je v tento den státní svátek.</li>
+                                        <li class="mb-2"><strong>workday_vacation:</strong> Indikátor, zda jsou v tento den prázdniny a zároveň pracovní den.</li>
+                                        <li class="mb-2"><strong>month:</strong> Měsíc v roce (1-12).</li>
+                                        <li class="mb-2"><strong>SUN:</strong> Počet hodin slunečního svitu.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="soft-card no-hover border-top-auto">
+                <h4 class="title-auto"><i class="bi bi-car-front display-7"></i> Automobilová doprava</h4>
+                <div id="res-car" class="pred-value title-auto">-</div>
+                <p class="text-muted">Očekávané vytížení</p>
+                <button class="btn btn-sm btn-outline-secondary d-none" id="btn-shap-car" data-bs-toggle="modal" data-bs-target="#shapModalCar">
+                    Proč je hodnota taková?
+                </button>
+            </div>
+        </div>
+        <div class="modal fade" id="shapModalCar" tabindex="-1">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content" style="border-radius: 20px;">
+                    <div class="modal-header border-0">
+                        <h5 class="modal-title fw-bold">Detailní interpretace modelu automobilové dopravy</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-lg-7 text-center border-end">
+                                <img id="shap-img-placeholder-car" src="" class="img-fluid" alt="SHAP graf">
+                                <p class="text-muted small mt-2">Graf SHAP Waterfall: Červená zvyšuje výslednou predikci, modrá ji snižuje.</p>
+                            </div>
+
+                            <div class="col-lg-5 ps-4">
+                                <h6>Co ovlivňuje predikci?</h6>
+                                <p class="small">
+                                    Zobrazená hodnota je predikce <strong>váženého průměru stupně dopravy</strong> napříč celou Prahou. 
+                                    <a href="https://cs.wikipedia.org/wiki/Stupe%C5%88_provozu" target="_blank" 
+                                        rel="noopener noreferrer" 
+                                        class="text-primary">Více o stupních 1–5 zde</a>. 
+                                        Tato hodnota je následně převedena na kategorii (1–5) na základě kvantilového rozdělení trénovacích dat.
+                                </p>
+                                
+                                <div class="feature-explanation scrollable-list" style="max-height: 450px; overflow-y: auto;">
+                                    <ul class="list-unstyled small">
+                                        <li class="mb-2"><strong>nonwork_block_size:</strong> Celková délka aktuálního souvislého volna (např. 2 pro víkend, 3-4 pro prodloužený víkend).</li>
+                                        <li class="mb-2"><strong>weekday_sin / weekday_cos:</strong> Cyklické vyjádření dne v týdnu (zachovává vztah neděle-pondělí).</li>
+                                        <li class="mb-2"><strong>lockdown_level:</strong> Úroveň omezení pohybu (z historických dat modelu).</li>
+                                        <li class="mb-2"><strong>is_workday:</strong> Rozlišuje, zda jde o běžný pracovní den (1) nebo den volna (0).</li>
+                                        <li class="mb-2"><strong>doy_sin / doy_cos:</strong> Pozice dne v rámci roku. Zachycuje roční sezónnost (na jaře je hodnota doy_cos blízká 1, na podzim je blízká -1; doy_sin naopak rozlišuje mezi zimou (1) a létem (-1)).</li>
+                                        <li class="mb-2"><strong>month_sin / month_cos:</strong> Vyjádření měsíce v roce pro zachycení měsíčních výkyvů (číselně jaro/léto/podzim/zima podobně jako u doy_sin/doy_cos).</li>
+                                        <li class="mb-2"><strong>TEMP / TEMP_sq:</strong> Aktuální teplota a její druhá mocnina (modeluje extrémní horka/mrazy).</li>
+                                        <li class="mb-2"><strong>school_impact_scale:</strong> Váha vlivu prázdnin na dopravu (čím delší prázdniny, tím větší číslo).</li>
+                                        <li class="mb-2"><strong>weekday:</strong> Pořadí dne v týdnu (0 = pondělí, 6 = neděle).</li>
+                                        <li class="mb-2"><strong>school_holiday:</strong> Indikátor, zda v tento den probíhají školní prázdniny.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row mt-4">
+        <div class="col-12">
+            <div class="accordion accordion-flush soft-card p-0" id="legendAccordion">
+                <div class="accordion-item" style="border: none; background: transparent;">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed fw-bold text-muted shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapseLegend" style="background: transparent; border-radius: 16px;">
+                            Význam hodnot (1–5)
+                        </button>
+                    </h2>
+                    <div id="collapseLegend" class="accordion-collapse collapse" data-bs-parent="#legendAccordion">
+                        <div class="accordion-body border-top">
+                            <div class="row">
+                                <h5>Co znamenají stupně 1–5?</h5>
+                                <p class="small text-muted">
+                                    Výsledná hodnota je stupeň vytížení pro daný typ dopravy:
+                                </p>
+                                <ul class="small list-unstyled">
+                                    <li><strong>1 – Minimální:</strong> minimum cyklistů, poloprázdná MHD, velmi nízký provoz</li>
+                                    <li><strong>2 – Podprůměrné:</strong> Volnější doprava, plynulý průjezd městem.</li>
+                                    <li><strong>3 – Průměrné:</strong> běžný den v Praze, standardní ranní a odpolední špička.</li>
+                                    <li><strong>4 – Nadprůměrné:</strong> vysoký počet cyklistů, MHD velmi plné, hustá doprava</li>
+                                    <li><strong>5 – Maximální:</strong> dopravní špičky, extrémní vytížení infrastruktury</li>
+                                </ul>
+                                <p class="small text-muted">
+                                    Kategorie vznikly na základě kvantilového rozdělení trénovacích dat.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

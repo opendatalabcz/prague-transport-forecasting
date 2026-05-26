@@ -1,0 +1,399 @@
+<section id="analysis" class="py-5">
+    <div class="container">
+        <h2 class="section-title text-center mb-5">Analýza</h2>
+        <div class="row g-4">
+            
+            <div class="col-md-4">
+                <div class="soft-card no-hover border-top-cyklo d-flex flex-column">
+                    <h4 class="title-cyklo mb-3">Cyklodoprava</h4>
+                    <div class="analysis-preview-container" data-bs-toggle="modal" data-bs-target="#modalAnalysisCyklo">
+                        <img src="{{ url_for('static', filename='media_selection/preview-cyclo.png') }}" class="img-fluid analysis-preview-img" alt="Náhled dashboardu cyklo">
+                        <div class="analysis-preview-overlay">
+                            <div class="btn btn-light btn-sm fw-bold shadow-sm">
+                                <i class="bi bi-search me-1"></i> Otevřít analýzu
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="soft-card no-hover border-top-mhd d-flex flex-column">
+                    <h4 class="title-mhd mb-3">MHD</h4>
+                    <div class="analysis-preview-container" data-bs-toggle="modal" data-bs-target="#modalAnalysisMhd">
+                        <img src="{{ url_for('static', filename='media_selection/mhd_preview.png') }}" class="img-fluid analysis-preview-img" alt="Náhled dashboardu mhd">
+                        <div class="analysis-preview-overlay">
+                            <div class="btn btn-light btn-sm fw-bold shadow-sm">
+                                <i class="bi bi-search me-1"></i> Otevřít analýzu
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="soft-card no-hover border-top-auto d-flex flex-column">
+                    <h4 class="title-auto mb-3">Automobilová doprava</h4>
+                    <div class="analysis-preview-container" data-bs-toggle="modal" data-bs-target="#modalAnalysisAuto">
+                        <img src="{{ url_for('static', filename='media_selection/car_preview.png') }}" class="img-fluid analysis-preview-img" alt="Náhled dashboardu auto">
+                        <div class="analysis-preview-overlay">
+                            <div class="btn btn-light btn-sm fw-bold shadow-sm">
+                                <i class="bi bi-search me-1"></i> Otevřít analýzu
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="soft-card no-hover p-4 p-lg-5">
+                <div class="row align-items-center g-5">
+                    <div class="col-lg-6">
+                        <h5 class="fw-bold mb-3">Vztahy mezi faktory</h5>
+                        <div class="bg-white p-2 rounded-3 shadow-sm border">
+                            <img src="{{ url_for('static', filename='media_selection/correlation_heatmap.png') }}" class="img-fluid rounded-2" alt="Korelační matice">
+                        </div>
+                        <p class="small text-muted mt-3 italic">
+                            Korelační matice (Pearsonův koeficient) ukazuje sílu vztahu mezi počasím, časem a intenzitou jednotlivých módů dopravy.
+                        </p>
+                    </div>
+                    
+                    <div class="col-lg-6">
+                        <h5 class="fw-bold mb-4">Klíčová zjištění analýzy</h5>
+                        
+                        <div class="d-flex mb-4">
+                            <div class="me-3 fs-3">🚲</div>
+                            <div>
+                                <h6 class="fw-bold mb-1">Meteo-závislost cyklistiky</h6>
+                                <p class="small text-muted mb-0">Nejsilnější vazba na teplotu (r = 0,77) a slunce. Naopak sníh a vítr dopravu tlumí, zatímco kalendář hraje jen vedlejší roli.</p>
+                            </div>
+                        </div>
+
+                        <div class="d-flex mb-4">
+                            <div class="me-3 fs-3">🚋</div>
+                            <div>
+                                <h6 class="fw-bold mb-1">Periodicita a návrat MHD</h6>
+                                <p class="small text-muted mb-0">Determinována týdenním cyklem (r = -0,61 pro víkendy). Data jasně ukazují postupný návrat cestujících po pandemii ($r = 0,35$).</p>
+                            </div>
+                        </div>
+
+                        <div class="d-flex">
+                            <div class="me-3 fs-3">🚗</div>
+                            <div>
+                                <h6 class="fw-bold mb-1">Stabilita automobilové dopravy</h6>
+                                <p class="small text-muted mb-0">Nejméně citlivá na den v týdnu (r = -0,06). Volnočasové jízdy o víkendech efektivně kompenzují úbytek pracovních cest.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<div class="modal fade" id="modalAnalysisCyklo" tabindex="-1">
+    <div class="modal-dialog modal-fullscreen p-md-5">
+        <div class="modal-content" style="border-radius: 25px; background-color: var(--bg-color); border: none;">
+            
+            <div class="modal-header border-0 px-4 pt-4">
+                <div>
+                    <h3 class="modal-title fw-bold" style="color: var(--color-cyklo);">
+                        <i class="bi bi-bicycle me-2"></i>Dashboard: Analýza cyklodopravy v Praze
+                    </h3>
+                    <p class="text-muted mb-0">Interpretace dat ze sčítačů a predikční schopnosti modelu</p>
+                </div>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+
+            <div class="modal-body p-4">
+                
+                <div class="row mb-5">
+                    <div class="col-12">
+                        <div class="soft-card no-hover p-4">
+                            <h5 class="fw-bold mb-3 border-bottom pb-2">1. Geografické rozložení sčítačů</h5>
+                            <div class="row align-items-center">
+                                <div class="col-lg-8">
+                                    <img src="{{ url_for('static', filename='media_selection/counters.png') }}" class="img-fluid rounded-3 shadow-sm" alt="Mapa sčítačů">
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="p-3 bg-light rounded-3">
+                                        <p class="mb-0 italic">
+                                            <strong>Legenda:</strong> Mapa zobrazuje síť automatických sčítačů v Praze. Na mapě jsou také vyznačeny dvě meteorologická stanice, odkud pocházejí data o počasí
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row g-4 mb-5">
+                    <div class="col-12">
+                        <h5 class="fw-bold mb-3 border-bottom pb-2">2. Faktory ovlivňující intenzitu dopravy</h5>
+                    </div>
+                    
+                    <div class="col-lg-6">
+                        <div class="soft-card no-hover h-100">
+                            <h6 class="fw-bold mb-3">Vliv meteorologických podmínek</h6>
+                            <img src="{{ url_for('static', filename='media_selection/bike_weather_relationships.png') }}" class="img-fluid rounded-3 mb-3">
+                            <p class="small text-muted">
+                                Nejsilnějším prediktorem je <strong>teplota a sluneční svit</strong> (pozitivní korelace). Naopak déšť, vítr a sníh mají výrazně tlumící efekt, přičemž sněhová pokrývka snižuje variabilitu počtu cyklistů na minimum.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="soft-card no-hover h-100 text-center">
+                            <h6 class="fw-bold mb-3">Sezónnost a kalendář</h6>
+                            <div class="mb-3">
+                                <img src="{{ url_for('static', filename='media_selection/bike_time_relationships.png') }}" class="img-fluid rounded-3 mb-2">
+                                <img src="{{ url_for('static', filename='media_selection/bike_calendar_relationships.png') }}" class="img-fluid rounded-3 mb-2">
+                                <img src="{{ url_for('static', filename='media_selection/bike_lockdown_relationship.png') }}" class="img-fluid rounded-3 mx-auto" style="max-height: 200px;">
+                            </div>
+                            <p class="small text-muted text-start">
+                                Cyklodoprava v Praze je <strong>silně sezónní</strong> (vrchol květen–červen). Překvapivě vykazuje stabilitu mezi pracovním dnem a víkendem, což naznačuje mix rekreačního a dopravního využití kol.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row g-4">
+                    <div class="col-12">
+                        <h5 class="fw-bold mb-3 border-bottom pb-2">3. Výkonnost predikčního modelu</h5>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="soft-card no-hover h-100">
+                            <h6 class="fw-bold mb-3">Důležitost příznaků (Feature Importance)</h6>
+                            <img src="{{ url_for('static', filename='media_selection/bike_feature_importance.png') }}" class="img-fluid rounded-3">
+                            <p class="small mt-3">
+                                Model potvrzuje, že <strong>interakce slunce a teploty</strong> (SUN_TEMP_inter) je naprosto klíčová. Významnou roli hraje také historickáúroveň lockdownu, která v datech vytvořila specifické anomálie v chování obyvatel.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="soft-card no-hover h-100">
+                            <h6 class="fw-bold mb-3">Matice záměn (Confusion Matrix)</h6>
+                            <div class="text-center">
+                                <img src="{{ url_for('static', filename='media_selection/bike_matrix.png') }}" class="img-fluid rounded-3" style="max-height: 400px;">
+                            </div>
+                            <p class="small mt-3">
+                                Matice ukazuje vysokou úspěšnost klasifikace do 5 kategorií intenzity. Nejčastější chyby (mimo diagonálu) jsou pouze o jednu sousední kategorii, což značí <strong>vysokou robustnost modelu</strong> především uvážíme-li, že jde o výsledek na testovací množině dat, která model ještě nikdy neviděl.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div> <div class="modal-footer border-0 p-4">
+                <button type="button" class="btn btn-secondary rounded-pill px-4" data-bs-dismiss="modal">Zavřít analýzu</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modalAnalysisMhd" tabindex="-1">
+    <div class="modal-dialog modal-fullscreen p-md-5">
+        <div class="modal-content" style="border-radius: 25px; background-color: var(--bg-color); border: none;">
+            
+            <div class="modal-header border-0 px-4 pt-4">
+                <div>
+                    <h3 class="modal-title fw-bold" style="color: var(--color-mhd);">
+                        <i class="bi bi-train-front me-2"></i>Dashboard: Veřejná doprava v Praze
+                    </h3>
+                    <p class="text-muted mb-0">Analýza mobility v síti PID a predikce vytíženosti</p>
+                </div>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+
+            <div class="modal-body p-4">
+                
+                <div class="row g-4 mb-5">
+                    <div class="col-lg-7">
+                        <div class="soft-card no-hover h-100">
+                            <h5 class="fw-bold mb-3 border-bottom pb-2">1. Mapa a historický vývoj</h5>
+                            <img src="{{ url_for('static', filename='media_selection/Praha_tramvaje_metro.png') }}" class="img-fluid rounded-3 mb-3" alt="Mapa MHD">
+                            <div class="p-3 bg-light rounded-3">
+                                <p class="small mb-0 italic">
+                                    Analýza zahrnuje počty cestujících z metra, tramvají a autobusů v rámci sítě PID. Tento mix pokrývá přes 90 % všech přepravních výkonů v Praze.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-5">
+                        <div class="soft-card no-hover h-100">
+                            <h5 class="fw-bold mb-3 border-bottom pb-2">Meziroční trend (Recovery)</h5>
+                            <img src="{{ url_for('static', filename='media_selection/mhd_yearly_sum.png') }}" class="img-fluid rounded-3" alt="Vývoj MHD">
+                            <p class="mt-3">
+                                Na tomto grafu je velmi zřetelný vliv pandemie COVID-19, kdy došlo k dramatickému poklesu počtu cestujících v roce 2020. Následný rok 2021 přinesl částečné zotavení, ale plný návrat na předpandemickou nastal až okolo roku 2023.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row g-4 mb-5">
+                    <div class="col-12">
+                        <h5 class="fw-bold mb-3 border-bottom pb-2">2. Faktory ovlivňující intenzitu dopravy</h5>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="soft-card no-hover h-100">
+                            <h6 class="fw-bold mb-3">Vliv meteorologických podmínek</h6>
+                            <img src="{{ url_for('static', filename='media_selection/mhd_weather_relationships.png') }}" class="img-fluid rounded-3 mb-3">
+                            <p class="small text-muted">
+                                Na rozdíl od cyklodopravy je poptávka po MHD v Praze vůči počasí zcela stabilní. To potvrzuje, že MHD je pro mnoho lidí nezbytností, nikoli volbou závislou na aktuálních podmínkách.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="soft-card no-hover h-100 text-center">
+                            <h6 class="fw-bold mb-3">Sezónnost a kalendář</h6>
+                            <div class="mb-3">
+                                <img src="{{ url_for('static', filename='media_selection/mhd_time_relationships.png') }}" class="img-fluid rounded-3 mb-2">
+                                <img src="{{ url_for('static', filename='media_selection/mhd_calendar_relationships.png') }}" class="img-fluid rounded-3 mb-2">
+                                <img src="{{ url_for('static', filename='media_selection/mhd_lockdown_relationship.png') }}" class="img-fluid rounded-3 mx-auto" style="max-height: 200px;">
+                            </div>
+                            <p class="small text-muted text-start">
+                                Zato dny v týdnu, státní svátky a prázdniny mají na hromadnou dopravu zcela zásadní vliv. Na spodním grafu můžeme vidět vliv protipandemických opatření - čím přísnější, tím méně cestujících
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row g-4">
+                    <div class="col-12">
+                        <h5 class="fw-bold mb-3 border-bottom pb-2">3. Výkonnost predikčního modelu</h5>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="soft-card no-hover h-100">
+                            <h6 class="fw-bold mb-3">Důležitost příznaků (Feature Importance)</h6>
+                            <img src="{{ url_for('static', filename='media_selection/mhd_feature_importance.png') }}" class="img-fluid rounded-3">
+                            <p class="small mt-3">
+                                Zde vidíme, že nejzásadnější je pro model skutečně den v týdnu.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="soft-card no-hover h-100">
+                            <h6 class="fw-bold mb-3">Matice záměn (Confusion Matrix)</h6>
+                            <div class="text-center">
+                                <img src="{{ url_for('static', filename='media_selection/mhd_matrix.png') }}" class="img-fluid rounded-3" style="max-height: 400px;">
+                            </div>
+                            <p class="small mt-3">
+                                Matice ukazuje vysokou úspěšnost klasifikace do 5 kategorií intenzity. Jde o predikci validační a testovací množiny dohrommady zahrnujíci celý rok 2025 a model se zde nespletl ani jednou o více než jedu kategorii.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+            <div class="modal-footer border-0 p-4">
+                <button type="button" class="btn btn-secondary rounded-pill px-4" data-bs-dismiss="modal">Zavřít analýzu</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modalAnalysisAuto" tabindex="-1">
+    <div class="modal-dialog modal-fullscreen p-md-5">
+        <div class="modal-content" style="border-radius: 25px; background-color: var(--bg-color); border: none;">
+            
+            <div class="modal-header border-0 px-4 pt-4">
+                <div>
+                    <h3 class="modal-title fw-bold" style="color: var(--color-auto);">
+                        <i class="bi bi-car me-2"></i>Dashboard: Analýza cyklodopravy v Praze
+                    </h3>
+                    <p class="text-muted mb-0">Interpretace dat o dopravním toku z vybraných úseků</p>
+                </div>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+
+            <div class="modal-body p-4">
+                
+                <div class="row mb-5">
+                    <div class="col-12">
+                        <div class="soft-card no-hover p-4">
+                            <h5 class="fw-bold mb-3 border-bottom pb-2">1. Geografické rozložení sčítačů</h5>
+                            <div class="row align-items-center">
+                                <div class="col-lg-8">
+                                    <img src="{{ url_for('static', filename='media_selection/selected_routes_map.jpeg') }}" class="img-fluid rounded-3 shadow-sm" alt="Mapa sčítačů">
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="p-3 bg-light rounded-3">
+                                        <p class="mb-0 italic">
+                                            <strong>Legenda:</strong>Sledovaná síť zahrnuje klíčové úseky jako části Městského okruhu, klíčové tunely a mosty.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row g-4 mb-5">
+                    <div class="col-12">
+                        <h5 class="fw-bold mb-3 border-bottom pb-2">2. Faktory ovlivňující intenzitu dopravy</h5>
+                    </div>
+                    
+                    <div class="col-lg-6">
+                        <div class="soft-card no-hover h-100">
+                            <h6 class="fw-bold mb-3">Vliv meteorologických podmínek</h6>
+                            <img src="{{ url_for('static', filename='media_selection/car_weather_relationships.png') }}" class="img-fluid rounded-3 mb-3">
+                            <p class="small text-muted">
+                                Indikátor automobilové dopravy vykazuje vysokou míru stability vůči meteorologickým vlivům; mírná citlivost je patrná pouze u deště (nárůst), teploty (nárůst) a silného větru (pokles). Drobný růst intenzity automobilové dopravy během deště může naznačovat částečný přesun cestujících z aktivních módů dopravy do individuální automobilové dopravy. Vliv slunečního svitu je prakticky nulový a obdobně nevýrazný efekt vykazuje i sněhová pokrývka, jejíž interpretace je však omezená vysokým podílem nulových hodnot v datech.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="soft-card no-hover h-100 text-center">
+                            <h6 class="fw-bold mb-3">Sezónnost a kalendář</h6>
+                            <div class="mb-3">
+                                <img src="{{ url_for('static', filename='media_selection/car_time_relationships.png') }}" class="img-fluid rounded-3 mb-2">
+                                <img src="{{ url_for('static', filename='media_selection/cars_calendar_relationships.png') }}" class="img-fluid rounded-3 mb-2">
+                                <img src="{{ url_for('static', filename='media_selection/cars_lockdown_relationship.png') }}" class="img-fluid rounded-3 mx-auto" style="max-height: 200px;">
+                            </div>
+                            <p class="small text-muted text-start">
+                                Pro tento model je nejdůležitější pracovní režim. Zda je nebo není pracovní den a ještě lépe, jak dlouho nepracovní volno trvá (nonwork_block_size).
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row g-4">
+                    <div class="col-12">
+                        <h5 class="fw-bold mb-3 border-bottom pb-2">3. Výkonnost predikčního modelu</h5>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="soft-card no-hover h-100">
+                            <h6 class="fw-bold mb-3">Důležitost příznaků (Feature Importance)</h6>
+                            <img src="{{ url_for('static', filename='media_selection/car_feature_importance.png') }}" class="img-fluid rounded-3">
+                            <p class="small mt-3">
+                                Model potvrzuje, že <strong>interakce slunce a teploty</strong> (SUN_TEMP_inter) je naprosto klíčová. Významnou roli hraje také historickáúroveň lockdownu, která v datech vytvořila specifické anomálie v chování obyvatel.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="soft-card no-hover h-100">
+                            <h6 class="fw-bold mb-3">Matice záměn (Confusion Matrix)</h6>
+                            <div class="text-center">
+                                <img src="{{ url_for('static', filename='media_selection/cars_matrix.png') }}" class="img-fluid rounded-3" style="max-height: 400px;">
+                            </div>
+                            <p class="small mt-3">
+                                Matice ukazuje výraznou nevyváženost dat v této opět sjednocené množině (validační+testovací), pokrývající většinu roku 2025. Je zde patrné, že predikce tohoto módu byla nejobtížnější oproti ostatním módům.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div> <div class="modal-footer border-0 p-4">
+                <button type="button" class="btn btn-secondary rounded-pill px-4" data-bs-dismiss="modal">Zavřít analýzu</button>
+            </div>
+        </div>
+    </div>
+</div>

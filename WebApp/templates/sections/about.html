@@ -1,0 +1,74 @@
+<section id="about" class="py-5">
+    <div class="container">
+        <div class="soft-card p-4 p-md-5">
+            <div class="text-center mb-5">
+                <h2 class="section-title mb-2">O projektu</h2>
+                <div class="mx-auto" style="width: 60px; height: 4px; background-color: var(--header-bg); border-radius: 2px;"></div>
+            </div>
+
+            <div class="row g-5">
+                <div class="col-lg-6">
+                    <h4 class="fw-bold mb-3" style="color: var(--header-bg);">Záměr a metodika</h4>
+                    <p>
+                        Tato aplikace prezentuje výsledky bakalářské práce zaměřené na modelování mobility v Praze. Cílem bylo analyzovat, jak externí faktory (počasí, svátky, kalendářní efekty) ovlivňují tři různé módy dopravy a vytvořit modely schopné interpretovatelné predikce.
+                    </p>
+                    
+                    <h5 class="fw-bold mt-4 mb-3">Jak predikce vznikla?</h5>
+                    <p class="small text-muted">
+                        Modely byly natrénovány na rozsáhlých datasetech z let 2021–2025 (zdroje <strong>Golemio, TSK, DPP a ČHMÚ</strong>). Proces zahrnoval:
+                    </p>
+                    <ul class="list-unstyled small text-muted">
+                        <li class="mb-2"><i class="bi bi-cpu text-primary me-2"></i><strong>Algoritmus CatBoost:</strong> Po srovnání s Random Forest a XGBoost byl jako nejvhodnější pro všechny módy zvolen CatBoost Regressor pro jeho schopnost zachytit nelineární vztahy.</li>
+                        <li class="mb-2"><i class="bi bi-tools text-primary me-2"></i><strong>Feature Engineering:</strong> Výpočet komplexních příznaků jako <em>nonwork_block_size</em> (kontinuita volna), interakce <em>SUN_TEMP_inter</em> nebo cyklické transformace času.</li>
+                        <li class="mb-2"><i class="bi bi-magic text-primary me-2"></i><strong>Optimalizace a SHAP:</strong> Ladění hyperparametrů proběhlo přes <strong>Optuna</strong> a interpretace vlivů pomocí <strong>SHAP hodnot</strong>.</li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="p-4 rounded-4 h-100" style="background-color: var(--bg-color); border: 1px solid rgba(0,0,0,0.05);">
+                        <h4 class="fw-bold mb-4" style="color: var(--header-bg);">Klíčová zjištění</h4>
+                        
+                        <div class="mb-4">
+                            <h6 class="fw-bold mb-1"><i class="bi bi-check-all me-2 text-success"></i>Vysoká přesnost (κ = 0,87 – 0,98)</h6>
+                            <p class="small text-muted">Za hlavní metriku byl zvolen kvadraticky vážený Kappa koeficient. Nejvyšší spolehlivost vykazuje model MHD díky silné periodicitě. U automobilové dopravy pomohl pokročilý feature engineering zvýšit přesnost o celých 17 procentních bodů.</p>
+                        </div>
+
+                        <div class="mb-4">
+                            <h6 class="fw-bold mb-1"><i class="bi bi-people me-2 text-success"></i>Motivace uživatelů</h6>
+                            <p class="small text-muted">Zatímco cyklodopravě dominují meteorologické podmínky, u MHD a automobilů hraje prim kalendářní cyklus a délka nepracovních bloků.</p>
+                        </div>
+
+                        <div class="mb-0">
+                            <h6 class="fw-bold mb-1"><i class="bi bi-virus me-2 text-success"></i>Vliv pandemie</h6>
+                            <p class="small text-muted">Lockdowny utlumily MHD a auta, ale podpořily cyklodopravu, která sloužila jako bezpečná substituce a forma rekreace.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-4 mt-5">
+                <div class="col-md-4">
+                    <div class="text-center p-3 border-top-cyklo soft-card no-hover shadow-none bg-light">
+                        <span class="fs-4"><i class="bi bi-bicycle display-6 me-2"></i></span>
+                        <h6 class="fw-bold mt-2 mb-0">Cyklo: κ = 0,92</h6>
+                        <small class="text-muted">Dominance teploty a slunce</small>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="text-center p-3 border-top-mhd soft-card no-hover shadow-none bg-light">
+                        <span class="fs-4"><i class="bi bi-train-front display-6 me-2"></i></span>
+                        <h6 class="fw-bold mt-2 mb-0">MHD: κ = 0,96</h6>
+                        <small class="text-muted">Nejvyšší stabilita a periodicita</small>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="text-center p-3 border-top-auto soft-card no-hover shadow-none bg-light">
+                        <span class="fs-4"><i class="bi bi-car-front display-6 me-2"></i></span>
+                        <h6 class="fw-bold mt-2 mb-0">Auto: κ = 0,87</h6>
+                        <small class="text-muted">Citlivost na délku volna</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
